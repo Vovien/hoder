@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/cardLinearlayout"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_card_item_normal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/common_interval"
+        android:paddingRight="@dimen/common_interval"
+        android:paddingTop="14dp">
+
+        <TextView
+            android:id="@+id/cardNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="21.3sp"
+            tools:text="飞龙卡"/>
+
+        <TextView
+            android:id="@+id/cardNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="13.3sp"
+            tools:text="卡号：123456"/>
+
+        <TextView
+            android:id="@+id/cardDiscountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="13.3sp"
+            tools:text="权益折扣:92折"/>
+
+        <TextView
+            android:id="@+id/cardValidityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="13.3sp"
+            tools:text="有效期:2017-12-12至2018-02-03"/>
+    </LinearLayout>
+</FrameLayout>

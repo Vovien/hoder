@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tv_text_white_ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <LinearLayout
+        android:id="@+id/packageNameTextView_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="37.3dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="5px"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/common_text_color_2495ee" />
+
+        <TextView
+            android:id="@+id/packageNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="37.3dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="9dp"
+            android:paddingRight="42.7dp"
+            android:textColor="@color/common_text_color_8b8b8b"
+            android:textSize="17sp"
+            tools:text="1号口袋" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/itemTitle"
+        layout="@layout/divider_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/item_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/imagePanel"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/takeaway" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/out_store" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/platformDishesNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textSize="16sp"
+                tools:text="农家小炒肉套饭" />
+
+            <TextView
+                android:id="@+id/dishesNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textSize="16sp"
+                tools:text="小炒肉套饭" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dishesCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="#000"
+                android:textSize="19sp"
+                tools:text="12.00" />
+
+            <TextView
+                android:id="@+id/dishesAmountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="right"
+                android:textColor="#555"
+                android:textSize="13sp"
+                tools:text="￥56.32" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/practicePriceTextView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:ellipsize="end"-->
+            <!--android:maxLines="1"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="14.7sp"-->
+            <!--android:visibility="visible"-->
+            <!--tools:text="小炒肉套饭" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/changeDishesTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="end|center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/more_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/practice_ll"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v4.widget.Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/practice_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical|start"
+            android:textColor="@color/tv_text_gray_555555"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/practice_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical|end"
+            android:textColor="@color/tv_text_gray_555555"
+            android:textSize="13sp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/remarkLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shap_take_out_remake"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="9dp"
+            android:paddingTop="5dp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注："
+                android:textColor="@color/common_text_color_2495ee"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/remarkTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大份/多放辣椒"
+                android:textColor="@color/common_text_color_707070"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/itemDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/bitmap_dash_line_image" />
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusable="true"
+              android:orientation="vertical">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="gone"
+        app:returnVisibility="visibility"
+        app:title="附加费"/>
+
+    <include layout="@layout/divider_horizontal"/>
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/state_empty_view"
+        app:msv_errorView="@layout/state_error_view"
+        app:msv_viewState="content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/surchargeRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/layout_bg_light_white"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/tableRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tv_text_white"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/confirm"
+                style="@style/RightAngleButton"
+                tools:text="确定"
+                />
+        </LinearLayout>
+
+    </com.kennyc.view.MultiStateView>
+
+</LinearLayout>

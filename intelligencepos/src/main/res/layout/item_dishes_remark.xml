@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_content_info"
+    android:layout_width="wrap_content"
+    android:layout_height="42.7dp"
+    android:background="@drawable/shape_flexbox_tv_bg"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:maxLines="1"
+    android:minWidth="80dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:textColor="#b2b2b2"
+    android:textSize="16sp"
+    tools:text="常用退因常用退因常用退因常用退因常用退因常用"
+    android:layout_margin="4dp"
+    />

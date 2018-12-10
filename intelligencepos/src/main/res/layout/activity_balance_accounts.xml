@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="gone"
+        app:returnVisibility="visibility"
+        app:title="结算" />
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:msv_emptyView="@layout/state_empty_view"
+        app:msv_errorView="@layout/state_error_view"
+        app:msv_viewState="content"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:paddingBottom="@dimen/common_interval_top"
+                        android:paddingLeft="@dimen/common_interval"
+                        android:paddingRight="@dimen/common_interval"
+                        android:paddingTop="@dimen/common_interval_top">
+
+                        <TextView
+                            android:id="@+id/memberLogin"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/shape_edit_corner_bg_focused"
+                            android:gravity="center"
+                            android:text="会员登录"
+                            android:textColor="@color/tv_text_blue"
+                            android:textSize="18.7sp"
+                            android:visibility="gone"
+                            tools:visibility="visible" />
+
+                        <RelativeLayout
+                            android:id="@+id/memberPanel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/memberNameTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/tv_text_item_title"
+                                    android:textSize="18.7sp"
+                                    tools:text="麦兜儿" />
+
+                                <TextView
+                                    android:id="@+id/memberTelTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/tv_text_item_info"
+                                    android:textSize="14.7sp"
+                                    tools:text="18212345678" />
+
+                                <LinearLayout
+                                    android:id="@+id/hes_memberInfo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/hes_memberGrade"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/tv_text_item_info"
+                                        android:textSize="14.7sp" />
+
+                                    <TextView
+                                        android:id="@+id/hes_memberIntegral"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/tv_text_item_info"
+                                        android:textSize="14.7sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/loginOrExitTextView"
+                                style="@style/BalanceAccountItemTitlePrice"
+                                android:text="退出"
+                                android:textColor="@color/tv_text_blue" />
+                        </RelativeLayout>
+                    </FrameLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dishesPanel"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="5.3dp"
+                        android:background="#fff"
+                        android:paddingLeft="@dimen/common_interval"
+                        android:paddingRight="@dimen/common_interval">
+
+                        <TextView
+                            android:id="@+id/tableNameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="商品合计"
+                            android:textColor="#000"
+                            android:textSize="18.7sp" />
+
+
+                        <TextView
+                            android:id="@+id/goodsPriceTotalTextView"
+                            style="@style/BalanceAccountItemTitlePrice"
+                            android:textColor="#000"
+                            tools:text="￥56.23" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="#fff"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="45dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/dishesTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            tools:text="回锅肉" />
+
+                        <TextView
+                            android:id="@+id/dishesCountTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            tools:text="共1项" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/divider_horizontal" />
+
+                    <RelativeLayout
+                        android:id="@+id/additionalDiscountPanel"
+                        style="@style/BalanceAccountItem_Main"
+                        android:layout_marginTop="5.3dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:text="附加费"
+                            android:textColor="@color/tv_text_item_title"
+                            android:textSize="18.7sp" />
+
+                        <TextView
+                            android:id="@+id/additionalFeesPriceTextView"
+                            style="@style/BalanceAccountItemTitlePrice"
+                            tools:text="-￥13.00" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/common_text_color_ffffff"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/discountPanel"
+                        style="@style/BalanceAccountItem_Main"
+                        android:layout_marginTop="5.3dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:text="折扣"
+                            android:textColor="@color/tv_text_item_title"
+                            android:textSize="18.7sp" />
+
+                        <TextView
+                            android:id="@+id/discountTotalTextView"
+                            style="@style/BalanceAccountItemTitlePrice"
+                            tools:text="-￥13.00" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/discountContextPanel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/discountDetailPanel"
+                        style="@style/BalanceAccountItem_Main">
+
+                        <include layout="@layout/full_line" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:text="折扣明细"
+                            android:textColor="@color/tv_text_item_title"
+                            android:textSize="18.7sp" />
+
+                        <TextView
+                            android:id="@+id/discountDetailTextView"
+                            style="@style/BalanceAccountItemTitlePrice"
+                            tools:text="" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/discountDetailContextPanel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+                </LinearLayout>
+            </ScrollView>
+
+            <include layout="@layout/divider_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/payButton_left"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_button_green"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/activity_button_text_size"
+                    android:visibility="gone"
+                    tools:text="作废账单" />
+
+                <Button
+                    android:id="@+id/payButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_button_blue"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/activity_button_text_size"
+                    tools:text="￥23.60 支付" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.kennyc.view.MultiStateView>
+</LinearLayout>

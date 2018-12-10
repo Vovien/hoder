@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f0f0f0"
+              android:orientation="vertical">
+
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="gone"
+        app:returnVisibility="visibility"
+        app:title="@string/change_price"/>
+
+    <include layout="@layout/divider_horizontal"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:id="@+id/discountLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <TextView
+                android:id="@+id/discountValueText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_edit_corner_bg_focused"
+                android:gravity="center"
+                android:maxLength="7"
+                android:textSize="22.7sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="(填写应收金额，不可高于原金额)"
+                android:textColor="#b2b2b2"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lay_keybord_height"
+        android:paddingBottom="@dimen/common_interval_small"
+        android:paddingLeft="@dimen/common_interval_small"
+        android:paddingRight="@dimen/common_interval_small">
+
+        <include layout="@layout/include_keyboard"/>
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/selector_button_blue"
+        android:enabled="false"
+        android:text="确定"
+        android:textColor="#fff"
+        android:textSize="@dimen/activity_button_text_size"
+        />
+
+</LinearLayout>

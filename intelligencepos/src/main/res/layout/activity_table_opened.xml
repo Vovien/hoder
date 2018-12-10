@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_common_secondary"
+    android:orientation="vertical">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuRes="@drawable/more_blue"
+        app:menuResVisibility="visibility"
+        app:menuTextVisibility="gone"
+        app:returnVisibility="visibility"
+        app:title="大厅01(201706260138)">
+
+    </com.holderzone.intelligencepos.widget.Title>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty_dishes"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_universal_spacing_20"
+            android:text="还未点餐"
+            android:textColor="@color/tv_text_gray_8b8b8b"
+            android:textSize="@dimen/tv_text_size_21"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_order_dishes"
+        style="@style/Button.RightAngle"
+        android:text="开始点餐"/>
+
+</LinearLayout>

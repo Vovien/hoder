@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/batch_note_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="gone"
+        app:returnVisibility="visibility" />
+
+    <TextView
+        android:id="@+id/snack_detail_dishes_count"
+        android:layout_width="match_parent"
+        android:layout_height="37.3sp"
+        android:background="@color/btn_text_white_ffffff"
+        android:gravity="center_vertical"
+        android:paddingLeft="16sp"
+        android:textColor="@color/btn_text_gray_8b8b8b"
+        android:textSize="16sp"
+        tools:text="已点菜品(5)" />
+
+    <View
+        android:id="@+id/snack_detail_dishes_count_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_solid_line" />
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/context"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/snack_detail_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.kennyc.view.MultiStateView>
+
+    <LinearLayout
+        android:id="@+id/ll_batch_note"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_button_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/select_all_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button_green"
+            android:text="取消全选"
+            android:textColor="#fff"
+            android:textSize="@dimen/activity_button_text_size" />
+
+        <Button
+            android:id="@+id/batch_note_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button_blue"
+            android:text="填写备注"
+            android:textColor="#fff"
+            android:textSize="22.7sp" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/batch_note_context"
+        layout="@layout/activity_batch_note_context"
+        android:visibility="gone" />
+</LinearLayout>
+

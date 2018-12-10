@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/divider_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/vipCardDiscountPanel"
+            style="@style/accounts_textDrawable"
+            android:onClick="onClick"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/vipCardDiscountImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/vip_card_middle" />
+
+                <TextView
+                    android:id="@+id/vipCardDiscountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tv_text_blue"
+                    android:textSize="18.7sp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    tools:text="-￥23.20" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会员折扣"
+                android:textColor="@color/common_text_color_707070"
+                android:textSize="@dimen/tv_text_size_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/couponDiscountPanel"
+            style="@style/accounts_textDrawable"
+            android:onClick="onClick">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/couponDiscountImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/discount_coupon_middle" />
+
+                <TextView
+                    android:id="@+id/couponDiscountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/button_bg_green_normal"
+                    android:textSize="18.7sp"
+                    android:visibility="invisible"
+                    tools:text="-￥23.20" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优惠券"
+                android:textColor="@color/common_text_color_707070"
+                android:textSize="@dimen/tv_text_size_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/orderDiscountPanel"
+            style="@style/accounts_textDrawable"
+            android:onClick="onClick">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/orderDiscountImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/discount_middle" />
+
+                <TextView
+                    android:id="@+id/orderDiscountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/tv_text_orange"
+                    android:textSize="18.7sp"
+                    android:visibility="invisible"
+                    tools:text="-￥23.20" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="整单折扣"
+                android:textColor="@color/common_text_color_707070"
+                android:textSize="@dimen/tv_text_size_15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/dishesDiscountPanel"
+            style="@style/accounts_textDrawable"
+            android:onClick="onClick">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/dishesDiscountImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/dishes_discount_middle" />
+
+                <TextView
+                    android:id="@+id/dishesDiscountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/common_text_color_01b6ad"
+                    android:textSize="18.7sp"
+                    android:visibility="invisible"
+                    tools:text="-￥23.20" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单品改价"
+                android:textColor="@color/common_text_color_707070"
+                android:textSize="@dimen/tv_text_size_15" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/updateOrderPrice"
+            style="@style/accounts_textDrawable"
+            android:onClick="onClick">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/changePriceImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/change_order_price_middle" />
+
+                <TextView
+                    android:id="@+id/changePriceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/common_text_color_2495ee"
+                    android:textSize="18.7sp"
+                    android:visibility="invisible"
+                    tools:text="-￥23.20" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_price"
+                android:textColor="@color/common_text_color_707070"
+                android:textSize="@dimen/tv_text_size_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_red_envelopes"
+            style="@style/accounts_textDrawable"
+            android:onClick="onClick">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_red_envelopes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/red_envelopes" />
+
+                <TextView
+                    android:id="@+id/tv_red_envelopes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/common_text_color_f56766"
+                    android:textSize="18.7sp"
+                    android:visibility="invisible"
+                    tools:text="-￥23.20" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红包"
+                android:textColor="@color/common_text_color_707070"
+                android:textSize="@dimen/tv_text_size_15" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

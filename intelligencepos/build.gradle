@@ -1,0 +1,180 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'realm-android'
+
+def keystoreAliasPSW = ''
+Properties properties = new Properties()
+// local.properties file in the root director
+properties.load(project.rootProject.file('gradle.properties').newDataInputStream())
+keystoreAliasPSW = properties.getProperty("keystore.storePassword")
+android {
+    signingConfigs {
+        test {
+            keyAlias keystore_keyAlias
+            keyPassword keystore_keyPassword
+            storeFile file(keystore_storeFile)
+            storePassword keystoreAliasPSW
+        }
+    }
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.holderzone.intelligencepos"
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode rootProject.v1VersionCode
+        versionName rootProject.v1VersionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        flavorDimensions "versionCode"
+    }
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "USE_CANARY", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "USE_CANARY", "false"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.test
+        }
+    }
+    productFlavors {
+        develop {
+            versionNameSuffix = "-内网测试"
+            applicationId "com.holderzone.intelligencepos.test"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "V1内测"
+            manifestPlaceholders = [ALI_PUSH_KEY: "25045768", ALI_PUSH_SECRET: "429111697dca6267b7a839b9519802a3"]
+        }
+        t_group_common {
+            versionNameSuffix = "-外网通用测试"
+            applicationId "com.holderzone.intelligencepos.test"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "V1外测"
+            manifestPlaceholders = [ALI_PUSH_KEY: "25045768", ALI_PUSH_SECRET: "429111697dca6267b7a839b9519802a3"]
+        }
+        publish {
+            applicationId = "com.holderzone.intelligencepos"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "Holder"
+            manifestPlaceholders = [ALI_PUSH_KEY: "24966619", ALI_PUSH_SECRET: "7ed4b16d637d5afe2d11d845702f1edc"]
+        }
+    }
+    // 数据库的版本及Dao相关设置
+    greendao {
+        // 数据库schema版本，也可以理解为数据库版本号
+        schemaVersion 4
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+realm {
+    syncEnabled = true
+}
+dependencies {
+
+    // file
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support'
+        exclude group: 'com.google.code.findbugs'
+        exclude module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+
+    // support
+    api "com.android.support:appcompat-v7:${supportLibraryVersion}"
+    api "com.android.support:recyclerview-v7:${supportLibraryVersion}"
+    api "com.android.support:cardview-v7:${supportLibraryVersion}"
+    api "com.android.support:design:${supportLibraryVersion}"
+
+    // image
+    api "com.github.bumptech.glide:glide:${glideVersion}"
+
+    // network request
+    api(["com.squareup.retrofit2:retrofit:${retrofit2Version}",
+         "com.squareup.retrofit2:converter-gson:${retrofit2Version}",
+         "com.squareup.retrofit2:adapter-rxjava2:${retrofit2Version}",
+         "com.squareup.okhttp3:okhttp:${okhttp3Version}",
+         "com.squareup.okhttp3:logging-interceptor:${okhttp3Version}"])
+
+    //RxJava相关
+    api "io.reactivex.rxjava2:rxjava:${rxjavaVersion}"
+    api "io.reactivex.rxjava2:rxandroid:${rxandroidVersion}"
+    // network parse
+    api "com.google.code.gson:gson:${gsonVersion}"
+
+    // dependency and injection
+    api "com.jakewharton:butterknife:${butterknifeVersion}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
+
+    // chart
+    api "com.github.PhilJay:MPAndroidChart:${MPAndroidChartVersion}"
+
+    api "com.trello.rxlifecycle2:rxlifecycle:${rxlifecycleVersion}"
+    api "com.trello.rxlifecycle2:rxlifecycle-components:${rxlifecycleVersion}"
+    api "com.jakewharton.rxbinding2:rxbinding:${rxbindingVersion}"
+
+    //widget
+    api "com.joooonho:selectableroundedimageview:${selectableroundedimageviewVersion}"
+
+    // database
+    api "org.greenrobot:greendao:${greendaoVersion}"
+    debugImplementation "com.amitshekhar.android:debug-db:${debug_dbVersion}"
+
+    // leakcanary
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:${leakcanaryVersion}"
+    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${leakcanaryVersion}"
+    testImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${leakcanaryVersion}"
+
+    // password input
+    api "com.jungly:gridPasswordView:${gridPasswordViewVersion}"
+
+    // multidex 65535
+    api "com.android.support:multidex:${multidexVersion}"
+
+    // permissions
+    api "com.tbruyelle.rxpermissions2:rxpermissions:${rxpermissionsVersion}"
+
+    // multi state view switch
+    api "com.github.Kennyc1012:MultiStateView:${MultiStateViewVersion}"
+    api "com.journeyapps:zxing-android-embedded:${zxingAndroidEmbeddedVersion}"
+
+    //上拉加载更多
+    api "com.wuxiaolong.pullloadmorerecyclerview:library:${pullloadmorerecyclerviewVersion}"
+
+    //右上角的弹出框
+    api "com.zaaach:toprightmenu:${toprightmenuVersion}"
+    api "com.tencent.bugly:crashreport:${crashreportVersion}"
+    api "com.blankj:utilcode:${utilcodeVersion}"
+
+    // flexboxLayout
+    api "com.google.android:flexbox:${flexboxVersion}"
+    api "se.emilsjolander:stickylistheaders:${stickylistheadersVersion}"
+    api files('libs/com.baidu.tts_2.3.0.jar')
+
+    // handle null
+    api "com.github.memoizr:retro-optional:${retroOptionalVersion}"
+
+    api "com.github.donkingliang:GroupedRecyclerViewAdapter:${GroupedRecyclerViewAdapterVersion}"
+    api "com.flipboard:bottomsheet-core:${bottomsheetVersion}"
+    api "com.readystatesoftware.systembartint:systembartint:${systembartintVersion}"
+    api "com.aliyun.ams:alicloud-android-push:${alicloudAndroidPushVersion}"
+    //mqtt
+    api "org.eclipse.paho:org.eclipse.paho.client.mqttv3:${mqttv3Version}"
+    api "org.eclipse.paho:org.eclipse.paho.android.service:${mqttServiceVersion}"
+    api group: 'commons-codec', name: 'commons-codec', version: '1.5'
+}

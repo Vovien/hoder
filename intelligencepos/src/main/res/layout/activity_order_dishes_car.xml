@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/common_color_ededed">
+
+        <View
+            android:id="@+id/title_view"
+            android:layout_width="3dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@color/btn_text_blue_2495ee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/title_view"
+            android:text="已选菜品"
+            android:textColor="@color/tv_text_gray_555555"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/clear_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/car_clear" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="清空"
+                android:textColor="@color/tv_text_gray_555555"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/multi_state_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_color_ededed"
+        app:msv_emptyView="@layout/state_empty_view"
+        app:msv_viewState="content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dishes_car_RV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_tv" />
+    </com.kennyc.view.MultiStateView>
+</LinearLayout>

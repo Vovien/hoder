@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_text_color_dfe3e6"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/msv_context"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/state_empty_view"
+        app:msv_errorView="@layout/state_error_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sc_using"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@color/layout_bg_white_ffffff"
+                android:paddingLeft="@dimen/common_interval"
+                android:paddingRight="@dimen/common_interval"
+                android:text="使用积分"
+                android:textSize="18.7sp"
+                app:theme="@style/order_dishes_setting_switch" />
+
+            <TextView
+                android:id="@+id/tv_context"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:lineSpacingExtra="@dimen/layout_universal_spacing_5"
+                android:paddingLeft="@dimen/common_interval"
+                android:paddingRight="@dimen/common_interval"
+                android:paddingTop="@dimen/activity_table_layout_margin_20dp"
+                tools:text="使用30积分抵扣￥3.00\n当前账户积分：1000" />
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_button_blue"
+                android:text="确定"
+                android:textColor="@color/common_text_color_ffffff"
+                android:textSize="22.7sp" />
+        </LinearLayout>
+    </com.kennyc.view.MultiStateView>
+</LinearLayout>

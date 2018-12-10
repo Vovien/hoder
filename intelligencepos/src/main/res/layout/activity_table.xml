@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/layout_bg_common_secondary">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="visibility"
+        app:title="选择桌台">
+
+    </com.holderzone.intelligencepos.widget.Title>
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/multi_state_view_table_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        app:msv_emptyView="@layout/state_empty_table_area"
+        app:msv_errorView="@layout/state_error_view"
+        app:msv_loadingView="@layout/state_loading_view"
+        app:msv_viewState="loading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_table_area"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_layout_height"
+                android:background="@color/layout_bg_white_ffffff">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <include layout="@layout/divider_horizontal"/>
+
+            <com.kennyc.view.MultiStateView
+                android:id="@+id/multi_state_view_table"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:msv_emptyView="@layout/state_empty_table"
+                app:msv_errorView="@layout/state_error_view"
+                app:msv_loadingView="@layout/state_loading_view"
+                app:msv_viewState="loading">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </com.kennyc.view.MultiStateView>
+
+        </LinearLayout>
+
+    </com.kennyc.view.MultiStateView>
+
+</RelativeLayout>

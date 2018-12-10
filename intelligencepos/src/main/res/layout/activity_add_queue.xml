@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/layout_universal_spacing_16"
+        android:paddingRight="@dimen/layout_universal_spacing_16">
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_universal_spacing_56"
+            android:background="@drawable/shape_edit_corner_bg"
+            android:gravity="center"
+            android:hint="@string/queue_input_phone_number"
+            android:textColor="@color/tv_text_gray_555555"
+            android:textColorHint="@color/tv_text_gray_b2b2b2"
+            android:textSize="@dimen/tv_text_size_19" />
+
+        <TextView
+            android:id="@+id/tv_dining_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_universal_spacing_56"
+            android:layout_marginTop="@dimen/layout_universal_spacing_27"
+            android:background="@drawable/shape_edit_corner_bg"
+            android:gravity="center"
+            android:hint="@string/queue_input_meals_number"
+            android:textColor="@color/tv_text_gray_555555"
+            android:textColorHint="@color/tv_text_gray_b2b2b2"
+            android:textSize="@dimen/tv_text_size_19" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/common_interval_small"
+        android:paddingLeft="@dimen/common_interval_small"
+        android:paddingRight="@dimen/common_interval_small">
+
+        <include layout="@layout/include_keyboard" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_take_the_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_universal_spacing_56"
+        android:background="@drawable/selector_button_light_blue"
+        android:text="@string/queue_add_queue_sure"
+        android:textColor="@color/btn_text_white_ffffff"
+        android:textSize="@dimen/btn_text_size_23" />
+</LinearLayout>

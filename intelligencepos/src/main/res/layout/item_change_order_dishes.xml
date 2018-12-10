@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_text_white_ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_content"
+        android:layout_width="match_parent"
+        android:layout_height="74.7dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_order_dishes_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/btn_text_black_000000"
+                android:textSize="18.7sp"
+                tools:text="菜品名称" />
+
+            <TextView
+                android:id="@+id/tv_order_dishes_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_order_dishes_name"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/tv_text_red_f56766"
+                android:textSize="14.7sp"
+                tools:text="菜品价格" />
+
+            <TextView
+                android:id="@+id/tv_order_dishes_price_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_order_dishes_price"
+                android:layout_toRightOf="@+id/tv_order_dishes_price"
+                android:textColor="@color/tv_text_gray_8b8b8b"
+                android:textSize="10.7sp"
+                tools:text="/份" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_order_dishes_operation"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_edit_choose_bg"
+            android:gravity="center"
+            android:textColor="@color/btn_text_white_ffffff"
+            android:textSize="13.3sp"
+            tools:text="选做法" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_top_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <include layout="@layout/divider_horizontal" />
+    </LinearLayout>
+</LinearLayout>

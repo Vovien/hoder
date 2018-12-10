@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_common_secondary"
+    android:orientation="vertical">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuRes="@drawable/more_blue"
+        app:menuResVisibility="visibility"
+        app:menuTextVisibility="gone"
+        app:returnVisibility="visibility"
+        app:title="合并账单（201706260138）">
+
+    </com.holderzone.intelligencepos.widget.Title>
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/layout_universal_spacing_16"
+        android:id="@+id/tv_merged_table_count"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_layout_height"
+        android:textColor="@color/tv_text_gray_8b8b8b"
+        android:textSize="@dimen/tv_text_size_16"
+        tools:text="已并桌台（3）"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_table_merged"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btn_print"
+        style="@style/Button.RightAngle"
+        tools:text="￥378.00 打印预结单"/>
+
+</LinearLayout>

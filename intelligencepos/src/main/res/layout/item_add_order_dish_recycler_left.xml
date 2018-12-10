@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dishesTypeItem"
+    android:layout_width="match_parent"
+    android:layout_height="73.3dp"
+    android:background="@drawable/selector_dishes_type_item_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/dishesTypeName"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="@color/common_text_color_555555"
+        android:ellipsize="end"
+        tools:text="火锅"/>
+
+    <TextView
+        android:id="@+id/dishesCount"
+        android:textSize="12sp"
+        android:paddingTop="9.3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_text_color_555555"
+        tools:text="23"/>
+</LinearLayout>

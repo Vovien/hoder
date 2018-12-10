@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#DFE3E6</color>
+
+    <!--textView-->
+    <color name="tv_text_white">#ffffff</color>
+    <color name="tv_text_red">#f56766</color>
+    <color name="tv_text_light_red">#f56766</color>
+    <color name="tv_text_green">#01b6ad</color>
+    <color name="tv_text_light_green">#01b6ad</color>
+    <color name="tv_text_blue">#2495ee</color>
+    <color name="tv_text_light_blue">#2495ee</color>
+    <color name="tv_text_orange">#f4a902</color>
+    <color name="tv_text_light_orange">#f4a902</color>
+    <color name="tv_text_gray">#cdcdcd</color>
+    <color name="tv_text_light_gray">#cdcdcd</color>
+    <color name="tv_text_black">#000000</color>
+    <color name="tv_text_item_title">#000000</color>
+    <color name="tv_text_item_info">#8b8b8b</color>
+    <color name="tv_text_item_money">#555</color>
+    <color name="tv_text_unkown">#de555555</color>
+    <color name="tv_text_unkown2">#555555</color>
+    <color name="tv_text_unkown3">#8b8b8b</color>
+
+    <color name="layout_bg_white">#ffffff</color>
+    <color name="layout_bg_light_white">#ffffff</color>
+
+    <color name="layout_bg_red">#f56766</color>
+    <color name="layout_bg_light_red">#f56766</color>
+
+    <color name="layout_bg_green">#01b6ad</color>
+    <color name="layout_bg_light_green">#01b6ad</color>
+
+    <color name="layout_bg_blue">#2495ee</color>
+    <color name="layout_bg_light_blue">#2495ee</color>
+
+    <color name="layout_bg_orange">#f4a902</color>
+    <color name="layout_bg_light_orange">#f4a902</color>
+
+    <color name="layout_bg_black">#000000</color>
+    <color name="layout_bg_light_black">#000000</color>
+
+    <!--list item card-->
+    <color name="list_item_card_text_name">#000000</color>
+    <color name="list_item_card_text_other">#707070</color>
+    <color name="list_item_card_text_selected">#ffffff</color>
+    <!--others-->
+    <color name="text_order_dishes_group_ineffective">#8C8C8C</color>
+    <color name="text_order_dishes_give">#01B6AD</color>
+    <color name="text_order_dishes_new_name">#000</color>
+    <color name="dishes_item_bg_disable_normal">#B2B6B9</color>
+    <color name="common_text_color_2495ee">#2495ee</color>
+    <color name="common_text_color_707070">#707070</color>
+    <color name="common_text_color_7c7c7c">#7c7c7c</color>
+    <color name="common_text_color_c1c1c1">#c1c1c1</color>
+    <color name="common_text_color_181818">#181818</color>
+    <color name="common_text_color_000000">#000000</color>
+    <color name="common_text_color_dfe3e6">#dfe3e6</color>
+    <color name="common_text_color_d8e9f7">#d8e9f7</color>
+    <color name="common_text_color_ffffff">#ffffff</color>
+    <color name="common_text_color_fefefe">#fefefe</color>
+    <color name="common_text_color_686868">#686868</color>
+    <color name="common_text_color_f7f7f7">#f7f7f7</color>
+    <color name="common_text_color_f8f8f8">#f8f8f8</color>
+    <color name="common_text_color_8b8b8b">#8b8b8b</color>
+    <color name="common_text_color_b1b1b1">#b1b1b1</color>
+    <color name="common_text_color_cdcdcd">#cdcdcd</color>
+    <color name="common_text_color_f4a902">#f4a902</color>
+    <color name="confirm_text_color">#b2b2b2</color>
+    <color name="additional_frees_count_select">#2496EE</color>
+    <color name="additional_frees_count_zero">#000</color>
+    <color name="card_info_lable_text_color">#000</color>
+    <color name="card_info_content_text_color">#707070</color>
+    <color name="card_item_selected_text_color">#fff</color>
+    <color name="card_item_type_text_color">#000</color>
+    <color name="card_item_text_color">#707070</color>
+    <color name="button_bg_green_normal">#01b6ad</color>
+    <color name="button_bg_green_pressed">#017f79</color>
+    <color name="edit_text_ccf0ef">#ccf0ef</color>
+    <color name="edit_text_9cd5d5">#9cd5d5</color>
+    <color name="input_hint_text_color">#bfbfbf</color>
+    <color name="dialog_bg_color">#dfe3e6</color>
+
+    <color name="button_bg_disabled">#b2b6b8</color>
+
+    <color name="bg_dishes_type_item_normal">#2495ee</color>
+    <color name="bg_dishes_type_item_selected">#ffffff</color>
+    <color name="bg_order_dishes_color">#e6e8ec</color>
+    <color name="dishe_type_text_normal">#555</color>
+    <color name="dishe_type_text_selected">#fff</color>
+    <color name="common_text_color_01b6ad">#01b6ad</color>
+    <color name="common_text_color_555555">#555555</color>
+    <color name="common_text_color_eff3f5">#eff3f5</color>
+
+    <color name="key_bord_bg_normal">#fff</color>
+    <color name="key_bord_bg_pressed">#c6def1</color>
+    <color name="text_order_dishes_suspend">#F6A704</color>
+    <color name="text_order_dishes_no_print">#F56766</color>
+    <color name="common_text_color_f56766">#f56766</color>
+    <color name="text_order_dishes_before_name">#B3B3B3</color>
+    <color name="text_order_dishes_group_used">#F56765</color>
+    <color name="text_order_dishes_group_unused">#F5A700</color>
+    <color name="match_order_confirm_text_changed">#f56766</color>
+    <color name="singel_dishes_discount_text_gray">#8b8b8b</color>
+    <!--layout-->
+    <color name="layout_bg_common">#f5f9fc</color>
+    <color name="layout_bg_common_primary">#f5f9fc</color>
+    <color name="layout_bg_common_secondary">#dfe3e6</color>
+    <color name="layout_bg_common_secodary">#dfe3e6</color>
+    <color name="layout_bg_common_thirdly">#f7f7f7</color>
+
+    <color name="layout_bg_disable">#b2b2b2</color>
+
+    <color name="layout_stroke">#cdcdcd</color>
+
+    <color name="layout_stroke_focused">#2495ee</color>
+
+    <color name="layout_bg_white_ffffff">#ffffff</color>
+    <color name="layout_bg_gray_8b8b8b">#8b8b8b</color>
+
+    <color name="layout_bg_white_f7f7f7">#f7f7f7</color>
+
+    <color name="layout_bg_red_f56766">#f56766</color>
+
+    <color name="layout_bg_green_01b6ad">#01b6ad</color>
+
+    <color name="layout_bg_blue_2495ee">#2495ee</color>
+
+    <color name="layout_bg_orange_f4a902">#f4a902</color>
+
+    <color name="layout_bg_black_000000">#000000</color>
+
+    <!--textView-->
+    <color name="tv_bg">#ffffff</color>
+    <color name="tv_hint">#cdcdcd</color>
+    <color name="tv_stroke">#cdcdcd</color>
+    <color name="tv_stroke_focused">#2495ee</color>
+
+    <color name="tv_text_white_ffffff">#ffffff</color>
+    <color name="tv_text_white_f7f7f7">#f7f7f7</color>
+    <color name="tv_text_white_fafafa">#fafafa</color>
+
+    <color name="tv_text_red_f56766">#f56766</color>
+
+    <color name="tv_text_green_01b6ad">#01b6ad</color>
+
+    <color name="tv_text_blue_2495ee">#2495ee</color>
+    <color name="tv_text_blue_de2495ee">#de2495ee</color>
+    <color name="tv_text_blue_0078d7">#0078d7</color>
+
+    <color name="tv_text_orange_f4a902">#f4a902</color>
+
+    <color name="tv_text_gray_b2b2b2">#b2b2b2</color>
+    <color name="tv_text_gray_cdcdcd">#cdcdcd</color>
+    <color name="tv_text_gray_8b8b8b">#8b8b8b</color>
+    <color name="tv_text_gray_707070">#707070</color>
+    <color name="tv_text_gray_555555">#555555</color>
+    <color name="tv_text_gray_de555555">#de555555</color>
+    <color name="tv_text_gray_bf040000">#bf040000</color>
+    <color name="tv_text_gray_f8f8f8">#f8f8f8</color>
+    <color name="tv_text_gray_fefefe">#fefefe</color>
+
+    <color name="tv_text_black_000000">#000000</color>
+
+    <!--editText-->
+    <color name="et_bg">#ffffff</color>
+    <color name="et_hint">#b2b2b2</color>
+    <color name="et_text">#555555</color>
+    <color name="et_stroke">#cdcdcd</color>
+    <color name="et_stroke_focused">#2495ee</color>
+
+    <!--button-->
+    <color name="btn_bg_red_normal">#f56766</color>
+    <color name="btn_bg_red_pressed">#ab4847</color>
+    <color name="btn_bg_light_red_normal">#f56766</color>
+    <color name="btn_bg_light_red_pressed">#ab4847</color>
+
+    <color name="btn_bg_green_normal">#01b6ad</color>
+    <color name="btn_bg_green_pressed">#017f79</color>
+    <color name="btn_bg_light_green_normal">#01b6ad</color>
+    <color name="btn_bg_light_green_pressed">#017f79</color>
+
+    <color name="btn_bg_blue_normal">#2495ee</color>
+    <color name="btn_bg_blue_pressed">#1968a6</color>
+    <color name="btn_bg_light_blue_normal">#2495ee</color>
+    <color name="btn_bg_light_blue_pressed">#1968a6</color>
+
+    <color name="btn_bg_orange_normal">#f4a902</color>
+    <color name="btn_bg_orange_pressed">#aa7601</color>
+    <color name="btn_bg_light_orange_normal">#f4a902</color>
+    <color name="btn_bg_light_orange_pressed">#aa7601</color>
+
+    <color name="btn_bg_disable">#b2b6b8</color>
+
+    <color name="btn_stroke">#cdcdcd</color>
+    <color name="btn_stroke_focused">#2495ee</color>
+
+    <color name="btn_text_white_ffffff">#ffffff</color>
+    <color name="btn_text_red_f56766">#f56766</color>
+    <color name="button_bg_red_normal">#f56766</color>
+    <color name="button_bg_red_pressed">#ab4847</color>
+    <color name="btn_text_green_01b6ad">#01b6ad</color>
+
+    <color name="btn_text_blue_2495ee">#2495ee</color>
+    <color name="btn_text_blue_0078d7">#0078d7</color>
+
+    <color name="btn_text_orange_f4a902">#f4a902</color>
+
+    <color name="btn_text_gray_cdcdcd">#cdcdcd</color>
+    <color name="btn_text_gray_8b8b8b">#8b8b8b</color>
+    <color name="btn_text_gray_707070">#707070</color>
+    <color name="btn_text_gray_555555">#555555</color>
+    <color name="btn_text_gray_de555555">#de555555</color>
+
+
+    <color name="btn_text_black_000000">#000000</color>
+
+    <!--divider-->
+    <color name="divider_solid_line">#cdcdcd</color>
+    <color name="divider_dash_line">#cdcdcd</color>
+
+    <!--dialog-->
+    <color name="dialog_bg">#dfe3e6</color>
+
+    <!--keyboard-->
+    <color name="keyboard_btn_bg_normal">#ffffff</color>
+    <color name="keyboard_btn_bg_pressed">#c6def1</color>
+
+    <!--other-->
+    <color name="text_color_d8e9f7">#d8e9f7</color>
+    <color name="item_color_operation">#1a000000</color>
+
+    <!--list item card-->
+    <color name="btn_text_eff3f5">#eff3f5</color>
+    <color name="common_color_ededed">#ededed</color>
+
+</resources>

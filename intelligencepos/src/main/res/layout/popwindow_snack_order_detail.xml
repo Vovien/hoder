@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_popup_window_batch_note"
+        android:layout_width="147dp"
+        android:layout_height="45dp"
+        android:background="@color/layout_bg_white_ffffff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/batch_note"/>
+
+        <TextView
+            android:id="@+id/tv_batch_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="批量备注"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_dash_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_popup_window_gift_all_or_not"
+        android:layout_width="147dp"
+        android:layout_height="45dp"
+        android:background="@color/layout_bg_white_ffffff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/give"/>
+
+        <TextView
+            android:id="@+id/tv_gift_all_or_not"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="赠送全部"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_dash_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_popup_window_clear_all_or_not"
+        android:layout_width="147dp"
+        android:layout_height="45dp"
+        android:background="@color/layout_bg_white_ffffff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/clear"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="清空全部"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

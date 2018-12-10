@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/common_interval">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="gone"
+        app:returnVisibility="visibility"
+        app:title="关于"/>
+
+
+    <ImageView
+        android:id="@+id/abortIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/abort_logo"
+        />
+
+    <TextView
+        android:id="@+id/versionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/abortIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textColor="#555"
+        android:textSize="14.7sp"
+        tools:text="版本号 V1.0"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="178.7dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            style="@style/AbortPanel">
+
+            <TextView
+                style="@style/AbortPanelTitle"
+                android:text="授权账号："/>
+
+            <TextView
+                android:id="@+id/account"
+                style="@style/AbortPanelValue"
+                tools:text="admin"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/divider_gradient"/>
+
+        <LinearLayout
+            style="@style/AbortPanel">
+
+            <TextView
+                style="@style/AbortPanelTitle"
+                android:text="授权商户："/>
+
+            <TextView
+                android:id="@+id/enterpriseName"
+                style="@style/AbortPanelValue"
+                tools:text="生如夏花泰式火锅"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/divider_gradient"/>
+
+        <LinearLayout
+            style="@style/AbortPanel">
+
+            <TextView
+                style="@style/AbortPanelTitle"
+                android:text="设备编号："/>
+
+            <TextView
+                android:id="@+id/deviceCode"
+                style="@style/AbortPanelValue"
+                tools:text="T101255455"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/divider_gradient"/>
+
+
+        <LinearLayout
+            style="@style/AbortPanel">
+
+            <TextView
+                style="@style/AbortPanelTitle"
+                android:text="授权期限："/>
+
+            <TextView
+                android:id="@+id/validateDate"
+                style="@style/AbortPanelValue"
+                tools:text="2017-12-21 15:45:44"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/copyright"
+            android:textColor="#b2b2b2"
+            android:textSize="10.7sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:text="@string/service_hotline"
+            android:textColor="#b2b2b2"
+            android:textSize="10.7sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/dishes_remark_bottom"
+        android:layout_below="@+id/title"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="10dp"
+        tools:visibility="gone">
+
+        <com.kennyc.view.MultiStateView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ededed"
+            app:msv_emptyView="@layout/state_empty_remark"
+            app:msv_errorView="@layout/state_error_view"
+            app:msv_viewState="content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/remark_setting_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.kennyc.view.MultiStateView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/dishes_remark_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/dishes_remark_bottom_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_button_blue"
+            android:gravity="center"
+            android:text="+ 添加"
+            android:textColor="@color/btn_text_white_ffffff"
+            android:textSize="22.7sp"
+            tools:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/dishes_remark_bottom_behind"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            tools:visibility="visible">
+
+            <Button
+                android:id="@+id/dishes_remark_bottom_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_button_green"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/btn_text_white_ffffff"
+                android:textSize="22.7sp" />
+
+            <Button
+                android:id="@+id/dishes_remark_bottom_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_button_red"
+                android:text="删除"
+                android:textColor="@color/btn_text_white_ffffff"
+                android:textSize="22.7sp" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

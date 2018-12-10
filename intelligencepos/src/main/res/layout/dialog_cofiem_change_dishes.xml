@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="328dp"
+    android:layout_height="wrap_content"
+    android:background="#dfe3e6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:textColor="@color/btn_text_gray_555555"
+            android:textSize="20sp"
+            tools:text="宫保鸡丁" />
+
+        <ImageView
+            android:id="@+id/close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/dialog_close" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/confirm_change"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height_48"
+            android:background="@drawable/selector_item_bg_operation"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="换菜"
+            android:textColor="@color/tv_text_gray_555555"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

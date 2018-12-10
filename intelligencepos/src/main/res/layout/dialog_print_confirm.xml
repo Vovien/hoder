@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="@dimen/dialog_width"
+              android:layout_height="wrap_content"
+              android:background="@color/dialog_bg"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginLeft="37.3dp"
+        android:layout_marginRight="37.3dp"
+        android:gravity="left|center_vertical"
+        android:textColor="#000000"
+        android:textSize="22.7sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/ignore"
+            style="@style/Button.RightAngle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button_green"
+            android:text="忽略"/>
+
+        <Button
+            android:id="@+id/retry"
+            style="@style/Button.RightAngle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button_blue"
+            android:text="再次尝试"/>
+
+    </LinearLayout>
+
+</LinearLayout>

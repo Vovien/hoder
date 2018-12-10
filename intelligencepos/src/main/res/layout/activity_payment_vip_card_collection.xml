@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/layout_bg_common_secodary"
+              android:orientation="vertical">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="gone"
+        app:returnVisibility="visibility"
+        app:title="会员卡收款"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收款金额"
+            android:textColor="@color/tv_text_unkown2"
+            android:textSize="17.3sp"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_interval_small"/>
+
+        <TextView
+            android:id="@+id/tv_unpaid_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_text_blue"
+            android:textSize="46.7sp"
+            tools:text="￥22.00"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_button_height_small"
+        android:layout_marginLeft="@dimen/common_interval"
+        android:layout_marginRight="@dimen/common_interval"
+        android:background="@drawable/shape_edit_corner_bg_focused">
+
+        <EditText
+            android:id="@+id/et_actually_pay_money"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="使用余额"/>
+
+
+        <ImageView
+            android:id="@+id/iv_actually_pay_money_clear"
+            style="@style/ImageView.EditTextClear"
+            tools:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <include
+        layout="@layout/include_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/common_interval_small"
+        android:layout_marginLeft="@dimen/common_interval_small"
+        android:layout_marginRight="@dimen/common_interval_small"
+        android:layout_weight="10"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/RightAngleButton"
+        android:enabled="false"
+        android:text="确定"/>
+
+</LinearLayout>

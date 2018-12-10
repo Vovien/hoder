@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_text_color_dfe3e6">
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/bill_detail_multistateview"
+        app:msv_errorView="@layout/state_error_view"
+        app:msv_emptyView="@layout/state_empty_view"
+        app:msv_viewState="content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include android:id="@+id/bill_recode_title"
+                layout="@layout/include_bill_recode_title"/>
+            <android.support.design.widget.TabLayout
+                android:id="@+id/bill_detail_tab_layout"
+                android:layout_below="@+id/bill_recode_title"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:tabSelectedTextColor="@color/tv_text_blue"
+                app:tabTextColor="@color/tv_text_unkown2"
+                app:tabTextAppearance="@style/TabLayout"
+                android:background="@color/common_text_color_ffffff"
+                app:tabMode="scrollable"
+                app:tabIndicatorColor="@color/tv_text_blue"/>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/bill_detail_viewpager"
+                android:layout_below="@+id/bill_detail_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </com.kennyc.view.MultiStateView>
+
+</RelativeLayout>

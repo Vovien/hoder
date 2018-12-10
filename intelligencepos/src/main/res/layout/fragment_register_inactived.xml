@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f9fc"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_activation_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="设备未激活或已过期"
+                android:textColor="#2f2f2f"
+                android:textSize="26.7sp"/>
+
+            <TextView
+                android:id="@+id/tv_device_activation_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="请将设备激活后使用"
+                android:textColor="#5a5a5a"
+                android:textSize="14.7sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+
+            <LinearLayout
+                android:id="@+id/ll_activate_service_hotline"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/common_interval"
+                android:paddingRight="@dimen/common_interval">
+
+                <TextView
+                    android:id="@+id/tv_activate_service_hotline_identify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="激活服务热线"
+                    android:textColor="#a5a8aa"
+                    android:textSize="17.3sp"/>
+
+                <TextView
+                    android:id="@+id/tv_activate_service_hotline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="8dp"
+                    android:text="@string/service_hotline_number"
+                    android:textColor="@color/tv_text_blue"
+                    android:textSize="17.3sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_device_id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/common_interval"
+                android:paddingRight="@dimen/common_interval">
+
+                <TextView
+                    android:id="@+id/tv_device_id_identify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="设备编号"
+                    android:textColor="#a5a8aa"
+                    android:textSize="17.3sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_device_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="8dp"
+                    android:textColor="#a5a8aa"
+                    android:textSize="17.3sp"
+                    tools:text="AR13-9FDA-8943-4YNG"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_exit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/common_interval"
+            android:paddingRight="@dimen/common_interval"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:background="@drawable/selector_button_blue_corners"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/exit"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="退出"
+                    android:textColor="#ffffff"
+                    android:textSize="22.7sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_service_contract"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/common_interval"
+            android:paddingTop="@dimen/common_interval"
+            android:text="用户服务协议"
+            android:textColor="#2495ee"
+            android:textSize="14.7sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

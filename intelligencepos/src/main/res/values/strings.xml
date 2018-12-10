@@ -1,0 +1,292 @@
+<resources>
+
+    <!--首页文字-->
+    <string name="pos">POS</string>
+
+    <!--用户协议文字-->
+    <string name="user_service_contract_title">Holder智慧门店管理\n软件用户服务协议</string>
+    <string name="user_service_contract_content">
+        <![CDATA[
+            <font color="#5a5a5a">
+                <br>欢迎使用Holder智慧门店管理软件服务，“Holder智慧门店管理软件”是由成都掌控者网络科技有限公司向用户提供的管理服务系统。为了保障您的权益，请您确认已于注册、使用之前，详细阅读了本服务协议的所有内容。Holder智慧门店管理软件根据本服务条款向用户提供服务。本服务条款具有合同法上的法律效力。</br>
+                <br>一旦您点选“注册”并完成注册程序，即表示您自愿接受本协议之所有条款，并已成为成都掌控者网络科技有限公司的注册会员，同意接受成都掌控者网络科技有限公司提供的各类信息服务，同意接受成都掌控者网络科技有限公司使用许可协议的约束。</br>
+                <br>《Holder智慧门店管理软件用户服务协议》（以下称“协议”）是您与上述Holder智慧门店管理软件（以下称“软件”或“平台”）版权所有人成都掌控者网络科技有限公司（以下称“版权人”）之间的法律协议。在您使用本软件产品之前,请务必阅读此《协议》，任何与《协议》有关的软件、电子文档等都应是按本协议的条款而授予您的，同时本《协议》亦适用于任何有关本软件产品的后期发行和升级。您一旦安装、复制、下载、访问或以其它方式使用本软件产品，即表示您同意接受本《协议》各项条款的约束。如您不同意本《协议》的条款，版权所有人成都掌控者网络科技有限公司则不予将本软件产品的使用权授予您。在这种情况下，您不得使用、复制或传播本软件产品。</br>
+                <br>本软件产品受中华人民共和国著作权法及国际著作权条约和其它知识产权法及条约的保护。</br>
+                <br/>
+                <br><b>总则</b></br>
+                <br>您注册成为本软件用户的行为，即表示您已阅读、理解并同意接受本协议之所有内容。</br>
+                <br>鉴于网络服务的特殊性，本协可由版权人随时更新，且无需另行通知。您在使用本软件服务时，应关注并遵守其所适用的相关条款。 </br>
+                <br>您在使用本软服务之前，应仔细阅读本协议。如您不同意本协议及/或版权对其的修改，您可以主动停用或取消本软件服务；您一旦使用本软件服务，即视为您已了解并完全同意本协各项内容，包括版权人对本协议随时所做的任何修改，并成为版权人的注册用户。版权人拥有本协议在法律许可范围内的最终解释权。</br>
+                <br>您所属的国家或地区排斥本服务条款内容之全部或部分内容，则您应立即停止使用本软件服务。</br>
+                <br/>
+                <br><b>定义</b></br>
+                <br>本软件是版权人开发及所有的门店管理系统，为餐饮行业提供智慧门店、智慧点单、营运分析、精准营销等服务。</br>
+                <br/>
+                <br><b>版权</b></br>
+                <br>本软件（包括但不限于本软件产品中所含的任何图像、照片、动画、文字和网站及附加程序）、随附的印刷材料、及本软件的任何副本的一切所有权和知识产权，均由版权人拥有。通过使用本软件可访问的内容的一切所有权和知识产权均属于各自内容的所有者拥有并可能受适用著作权或其它知识产权法律和条约的保护。本《协议》不授予您使用这些内容的权利。</br>
+                <br/>
+                <br><b>保证</b></br>
+                <br>本软件版权人特此申明对本软件之使用不提供任何保证。版权人将不对任何用户保证本软件产品的适用性，不保证无故障产生；亦不对任何用户使用此软件所遭遇到的任何理论上的或实际上的损失承担负责；不保证数据在一切方面完全准确。</br>
+                <br/>
+                <br><b>账户、密码安全</b></br>
+                <br>用户注册会员成功后，本软件将给予每个会员一个帐号及相应的密码，该帐号和密码由用户负责保管；用户应当对以其用户帐号进行的所有活动和事件负法律责任。</br>
+                <br>因黑客行为或会员保管疏忽致使帐号、密码被他人非法使用的，本公司不承担任何责任。如您发现任何非法使用会员帐号或安全漏洞的情况，应立即通知版权人。</br>
+                <br>本软件帐号的所有权归版权人，用户完成注册申请手续后，获得本软件帐号的使用权。用户应提供及时、详尽及准确的个人资料，并及时更新注册资料，符合及时、详尽准确的要求。如果因用户注册信息不真实而引起的问题及其产生的后果，版权人不负任何责任。</br>
+                <br>版权人不对外公开或向第三方提供单个用户的注册资料，除非：</br>
+                <br>• 事先获得用户的明确授权；</br>
+                <br>• 只有透露用户的个人资料，才能提供用户所要求的产品和服务；</br>
+                <br>• 根据有关的法律法规要求；</br>
+                <br>• 按照相关政府主管部门的要求；</br>
+                <br>• 为维护版权人的合法权益。</br>
+                <br>在您注册本软件，使用本软件产品或服务，或访问版权人网页时，版权人会收集您的个人身份识别资料，并会将这些资料用于：改进为您提供的服务。</br>
+                <br/>
+                <br><b>隐私权</b></br>
+                <br>版权人尊重并保护软件用户的个人隐私权，您注册的用户名、电话号码、电子邮件地址等个人资料、网站资料、上传的数据等，非经您亲自许可或根据相关法律、法规的强制性规定，以及版权人为维护改进软件服务为目的，不会主动地泄露给第三方。在软件用户使用本软件的过程中，用户应当遵守当地的法律法规，不得自行（且不得允许任何第三方）使用服务以追踪或收集互联网用户的个人身份信息、商业信息，也不得自行（且不得允许任何第三方）将从您的网站（或该第三方的网站）收集的任何数据与从任何来源获得的任何个人身份信息、商业信息相联系。</br>
+                <br/>
+                <br><b>尊重国家和他人合法权益</b></br>
+                <br>版权人特别提醒用户，使用本软件必须遵守国家有关的政策和法律，包括但不限于刑法、国家安全法、保密法、计算机信息系统安全保护条例，保护国家利益，保护国家安全，对于违法使用本软件而引起的一切责任，由用户负全部责任。版权人一贯尊重他人知识产权、隐私权及其他合法权益，用户也要同样尊重知识产权、隐私权及其他合法权益，不得利用本软件产品对他人的知识产权、隐私权及其他合法权益进行侵害。用户对他人知识产权、隐私权及其他合法权益进行侵害的，应自行承担相应的法律义务。</br>
+                <br/>
+                <br><b>费用</b></br>
+                <br>版权人为您提供多种模式的服务和定制服务。您可以根据您的需求购买适合的服务模式，或者定制服务。本软件服务的具体价格，详见：[www.holdzone.com]。</br>
+                <br>除非您另行书面通知版权人，否则，您特此向版权人（包括各关联公司）授予一项有限许可，在演示介绍、营销材料、客户名单和财务报表中使用您的商号、商品商标、服务商标、标识、域名及其他显著品牌特征。</br>
+                <br/>
+                <br><b>其它权利和限制说明</b></br>
+                <br>禁止反向工程、反向编译和反向汇编。</br>
+                <br>您不得对本软件产品进行反向工程、反向编译和反向汇编。除非适用法律明文允许上述活动，否则您必须遵守此协议限制。</br>
+                <br>禁止在使用本软件的过程中修改数据以获取利益。其中“数据”包括本软件系统后台直接采集的数据，以及在采集的上述数据基础上经过处理输出在报告中展现的数据。</br>
+                <br/>
+                <br><b>组件的分隔</b></br>
+                <br>本软件产品是被当成一个单一产品而被授予许可使用，不得将各个部分分开用于任何目的行动。</br>
+                <br/>
+                <br><b>终止</b></br>
+                <br>如您未遵守本协议的各项条件，版权人随时可将本协议终止。如发生此种情况，则您必须销毁本软件产品及其各部分的所有副本，并在终止后3个工作日内以书面形式向版权人做出销毁证明，否则，用户将承担相应的未经授权使用他人软件的法律责任。</br>
+                <br/>
+                <br><b>商标</b></br>
+                <br>本协议不授予您使用版权人所拥有的任何商标或服务商标有关的任何权利。</br>
+                <br/>
+                <br><b>个别授权</b></br>
+                <br>如有任何组织或个人利用本软件以任何方式为公众服务并同时满足其自身特定目的而分发、复制和传播本软件产品，均须得到版权人授权同意后方可进行，否则视为侵权。</br>
+                <br/>
+                <br><b>软件升级</b></br>
+                <br>版权人致力于不断提供更好的功能和服务，定期或不定期对软件和服务进行升级。版权人不保证所提供的软件和服务一直保持不变，也不保证所提供的软件产品和服务符合您的使用习惯和预期。</br>
+                <br/>
+                <br><b>服务条款和其他政策的修改</b></br>
+                <br>版权人有权以公告新协议的方式修改、变更本协议条款和服务政策，用户有责任定期查看。如您不接受变更、修改后的协议条款和服务政策的，应立即停止使用本软件，并按照终止条款的规定销毁已下载使用的软件产品。</br>
+                <br/>
+                <br><b>不可抗力</b></br>
+                <br>因不可抗力或者其他意外事件，使得本协议的履行不可能、不必要或者无意义的，双方均不承担责任。本协议所称之不可抗力意指不能预见、不能避免并不能克服的客观情况，包括但不限于战争、台风、水灾、火灾、雷击或地震、罢工、暴动、法定疾病、黑客攻击、网络病毒、电信部门技术管制、政府行为或任何其它自然或人为造成的灾难等客观情况。</br>
+                <br>下列情况亦属于不可抗力：</br>
+                <br>（1）任何公共的互联网骨干网、网络或服务器停运；</br>
+                <br>（2）您的设备、系统或当地连接服务发生故障；</br>
+                <br>（3）已经预定的维修；</br>
+                <br>（4）您的服务器所在地区的互联网服务中断；</br>
+                <br>（5）由于网络连接或者其他原因导致无法跳转到目标网站。</br>
+                <br>鉴于受网络环境等各种复杂因素影响，版权人提供的数据仅作为您经营管理的参考资料，版权人不保证所提供数据完全准确性或完整性，版权人对您据版权人提供数据所做出的商业行为后果不承担任何法律责任或经济责任。</br>
+                <br/>
+                <br><b>争议解决地</b></br>
+                <br>因本协议或使用本软件产品所引起的您与版权人之间的争议应由双方协商解决，协商不成则需要在版权人所在地人民法院审理。</br>
+                <br/>
+                <br>版权人成都掌控者网络科技有限公司对本软件用户许可协议的各项内容拥有最终解释权及修改权。</br>
+            </font>
+        ]]>
+    </string>
+    <string name="user_service_contract_read_and_agree">已阅读并同意</string>
+    <string name="user_service_contract_continue">继续</string>
+
+    <!--设备激活文字-->
+    <string name="business_account">商家账号</string>
+    <string name="version_name">版本号 V%1$s</string>
+    <string name="verify_code">验证码</string>
+    <string name="verify_sms">验证短信</string>
+    <string name="next_step">下一步</string>
+    <string name="user_service_contract">用户服务协议 ></string>
+
+    <!--激活成功文字-->
+    <string name="device_actived">设备已激活</string>
+    <string name="you_could_start_use">您可以开始使用了</string>
+    <string name="start_use">开始使用</string>
+
+    <!--激活失败文字-->
+    <string name="device_inactive">设备未激活或已过期</string>
+    <string name="activate_the_device_before_using">请将设备激活后使用</string>
+    <string name="service_hotline">服务热线：400-160-9600</string>
+    <string name="service_tel">Tel：400-160-9600</string>
+    <string name="service_hotline_number">400-160-9600</string>
+
+    <!--登录页面文字-->
+    <string name="copyright">©2017 成都掌控者网络科技有限公司.All Rights Reserved</string>
+    <string name="copyright2">Powered by 成都掌控者网络科技有限公司.All Rights Reserved</string>
+
+    <!-- 菜品-->
+    <string name="dishes_suspend">[挂]</string>
+    <string name="dishes_stop">[停售]</string>
+    <string name="no_print">[不打印]</string>
+    <string name="dishes_give">[赠]</string>
+    <string name="sure_order_str">￥%1$s 确认下单</string>
+    <!--结算-->
+    <string name="order_dishes_count">共%1$d菜品</string>
+    <!--<string name="amount">￥%1$.2f</string>-->
+    <string name="amount_str">￥%1$s</string>
+    <!--<string name="minus_amount">-￥%1$.2f</string>-->
+    <string name="minus_amount_str">-￥%1$s</string>
+    <string name="balance_account_pay_text">￥%1$s 收款</string>
+    <string name="change_price_pop">%1$s</string>>
+    <string name="practices_total_price">做法附加</string>
+    <!--<string name="dishes_count">×%1$.2f</string>-->
+    <string name="dishes_count_str">×%1$s</string>
+    <string name="account_balance_dishes_price">合计：￥%1$s</string>
+    <string name="account_balance_dishes_count">共%1$d项</string>
+    <string name="exit_member_confirm_content">退出账号将会清空所有会员折扣。确认退出吗？</string>
+    <string name="back_member_confirm_content">返回将不再保留会员优惠折扣。</string>
+    <string name="cancel">取消</string>
+    <string name="confirm_logout">确认退出</string>
+    <string name="confirm_back">确认返回</string>
+    <string name="confirm_invalid">确定作废</string>
+    <string name="invalid_order_content">确定要作废该账单吗?</string>
+    <string name="usdk_pay_error">无法连接到服务器。</string>
+    <string name="submit_try">再次尝试</string>
+
+    <!-- 优惠券-->
+    <string name="date_section">有效期：%1$s至%2$s</string>
+    <string name="coupon_code">验证码：%1$s</string>
+    <string name="confirm_button_forgive">确认放弃</string>
+    <string name="prompt">提示</string>
+    <string name="delete_coupon_prompt_content">放弃使用这张优惠券吗？</string>
+
+    <string name="additional_frees_confirm">￥%1$s 确定</string>
+    <string name="no_discount">&#060;无折扣&#062;</string>
+    <string name="card_name">卡号：%1$s</string>
+
+    <!--账单记录-->
+    <string name="business_day">营业日:%1$s</string>
+    <string name="bill_number">今日账单(%d)</string>
+    <string name="serial_number">流水号:%1$s</string>
+    <string name="amount_money">￥%1$s</string>
+    <string name="amount">￥%1$.2f</string>
+    <!--<string name="two_decimal">%1$.2f</string>-->
+    <string name="two_decimal_str">%1$s</string>
+    <string name="device_interrupt">未连接好设备</string>
+    <string name="change_order_price">收款改价</string>
+    <string name="change_price">整单改价</string>
+    <string name="away_dishes">菜品赠送</string>
+    <!--开台-->
+    <string name="close_table_dialog_count">该桌台未点餐，确认关台吗?</string>
+    <string name="close_table_dialog_neg">取消</string>
+    <string name="close_table_dialog_pos">确认关台</string>
+    <string name="close_failed">关台失败!</string>
+    <string name="only_open_table">仅开台</string>
+    <string name="open_table_and_order">开台点餐</string>
+    <string name="close_table">关台</string>
+    <string name="start_order">开始点餐</string>
+
+    <string name="order_dishes_ineffective">未生效</string>
+    <string name="choice_dishes">%1$s 选择菜品</string>
+    <string name="order_dishes">%1$s 确认菜品</string>
+    <string name="order_dishes_batch_time">%1$s下单</string>
+
+    <string name="order_dishes_number_int">%1$d</string>
+    <string name="meal_person_info">%1$d/%2$d</string>
+    <string name="add_dishes_failed_by_estimate">所选菜品已达到估清数量</string>
+    <string name="add_dishes_failed_by_estimate_small">所选菜品已不足1%1$s</string>
+    <string name="have_order_dishes_number">已点菜品(%1$d)</string>
+    <string name="add_dishes_failed_by_estimate_dialog">部分菜品已估清，请修改点菜数量</string>
+
+    <!--待结账-->
+    <string name="snack_order_number">号牌：</string>
+    <string name="snack_order_time">创建时间:</string>
+
+    <!--选择号牌-->
+    <string name="selected_org_number_clean">清空</string>
+    <string name="selected_org_number_title">点单号牌</string>
+
+    <!--备注设置页面-->
+    <string name="delete_remark_content">确认要删除所选备注吗？</string>
+    <string name="delete_remark_sure">确认删除</string>
+
+    <!--数字相关-->
+    <!--<string name="positive_amount">+￥%1$.2f</string>-->
+    <string name="positive_amount_str">+￥%1$s</string>
+    <!--<string name="negative_amount">-￥%1$.2f</string>-->
+    <string name="negative_amount_str">-￥%1$s</string>
+    <!--<string name="two_decimals">%1$.2f</string>-->
+    <string name="two_decimals_str">%1$s</string>
+    <!--<string name="one_decimals">%1$.1f</string>-->
+    <string name="additional_count">×%1$d</string>
+    <!--<string name="order_dishes_total_price">￥%1$.2f选好了</string>-->
+
+    <!--其他-->
+    <string name="modify_practices">修改做法</string>
+    <string name="delete">删除</string>
+    <string name="affirm_delete_dishes_prompt_content">确认删除%1$s吗?</string>
+    <string name="affirm_button_delete">确认删除</string>
+    <string name="modify_remark">修改备注</string>
+    <!--<string name="confirm_button_text">￥%1$.2f 确认下单</string>-->
+    <string name="confirm_button_text_str">￥%1$s 确认下单</string>
+    <string name="bill_count">今日账单(%1$d)</string>
+    <string name="sell_out">已售罄</string>
+    <string name="confirm">确定</string>
+    <string name="image_order_dishes_type_name">【 %1$s 】</string>
+    <string name="confirm_content_clear">确认清空所有已选菜品吗？</string>
+    <string name="confirm_button_clear">确认清空</string>
+    <string name="order_dishes_title">%1$s 选择菜品</string>
+    <string name="confirm_dishes_title">%1$s 确认菜品</string>
+    <string name="order_dishes_confirm_back_content">您已选择了菜品，返回将不再保留已选信息。</string>
+    <string name="takeaway_package_name">%1$d号口袋</string>
+    <string name="order_button_text">￥%1$s下单</string>
+    <!--设置相关-->
+    <string name="delete_retreat_reason_content">确认要删除所选退因吗？</string>
+    <string name="user_number">员工编号：%1$s</string>
+
+    <!--点菜详情页面-->
+    <string name="exit_content">确定退出当前账号吗？</string>
+    <string name="content_estimate">部分菜品已估清，请修改点菜数量</string>
+    <string name="order_detail_title">新点单 确认菜品</string>
+    <string name="order_detail_gift_all">    赠送全部</string>
+    <string name="order_detail_gift_not">    全部不赠送</string>
+    <string name="order_detail_hang_all">    挂起全部</string>
+    <string name="order_detail_hang_not">    全部不挂起</string>
+    <string name="order_detail_clear_all">    清空全部</string>
+    <string name="order_0">已点菜品 (0)</string>
+    <string name="clear_all_dialog_content">确认清空所有已选菜品吗?</string>
+    <string name="confirm_clear">确认清空</string>
+    <string name="confirm_delete">确认删除</string>
+
+    <!--修改菜品数量-->
+    <string name="change_number_title">修改数量</string>
+    <string name="designated_title">划菜数量</string>
+    <string name="change_number_count_str">%1$s</string>
+    <string name="member_mark">[会]</string>
+    <string name="member_exit">退出账号将不再享受会员折扣。确认退出吗？</string>
+    <string name="confirm_exit">确认退出</string>
+    <!--排队-->
+    <string name="queue_fetch_number_text">取号</string>
+    <string name="queue_input_phone_number">请输入手机号</string>
+    <string name="queue_input_meals_number">请输入就餐人数</string>
+    <string name="pop_window_refresh">刷新</string>
+    <string name="pop_window_statistics">统计</string>
+    <string name="queue_statistic_print_data">打印当日数据</string>
+    <string name="tvs_queue">排队</string>
+    <string name="queue_statistic_queue_text">队列</string>
+    <string name="queue_statistic_fetch_number_text">取号桌数</string>
+    <string name="queue_statistic_eat_number_text">就餐桌数</string>
+    <string name="queue_statistic_average_wait_number_text">平均等位</string>
+    <string name="queue_wait_time">%1$s分钟</string>
+    <string name="queue_add_queue_sure">确定</string>
+    <!--何师结算页面-->
+    <string name="hes_red_package">%1$d红包 确认使用</string>
+    <string name="hes_coupon">%1$d张劵 确认使用</string>
+    <string name="hes_not_loading">请先登录会员</string>
+    <string name="hes_not_red_package">无可用的红包</string>
+    <string name="hes_not_card">无可用会员折扣</string>
+    <string name="hes_not_coupon">无可用的优惠券</string>
+    <string name="hes_coupon_term_validity">%1$s 至 %2$s</string>
+    <string name="hes_card_number">卡号：%1$s</string>
+    <string name="hes_card_balance">余额：%1$s</string>
+    <string name="hes_card_discount">折扣：%1$s</string>
+    <string name="red_envelopes_code">%1$s</string>
+    <string name="coupon_verification_code">%1$s</string>
+
+    <string name="member_login">未登录会员</string>
+    <string name="member_login_message">请在结算页面登录</string>
+
+</resources>

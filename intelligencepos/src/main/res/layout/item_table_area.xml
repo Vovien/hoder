@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_item_area"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:minWidth="120dp">
+
+    <LinearLayout
+        android:id="@+id/ll_table_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_area_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/tv_text_gray_555555"
+            android:textSize="@dimen/tv_text_size_16"
+            tools:text="全部"/>
+
+        <TextView
+            android:id="@+id/tv_table_used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_text_gray_555555"
+            android:textSize="@dimen/tv_text_size_16"
+            tools:text="(30"/>
+
+        <TextView
+            android:id="@+id/tv_table_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_text_gray_555555"
+            android:textSize="@dimen/tv_text_size_16"
+            tools:text="/50)"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/ll_table_area"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/ll_table_area"
+        android:layout_centerHorizontal="true"
+        android:background="@color/layout_bg_blue_2495ee"/>
+
+</RelativeLayout>

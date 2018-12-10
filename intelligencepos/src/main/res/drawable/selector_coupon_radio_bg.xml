@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:state_checked="true">
+        <layer-list>
+            <!-- This is the main color -->
+            <item>
+                <shape>
+                    <solid android:color="#2495EE" />
+                </shape>
+            </item>
+            <!-- This is the line -->
+            <item android:bottom="2px">
+                <shape>
+                    <solid android:color="#fff" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item  android:state_checked="false" android:drawable="@android:color/white" ></item>
+</selector>
+

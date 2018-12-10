@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_universal_spacing_48"
+    android:background="@color/layout_bg_white_ffffff">
+
+    <TextView
+        android:id="@+id/tv_table_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/layout_universal_spacing_16"
+        android:gravity="center_vertical"
+        android:textColor="@color/tv_text_black_000000"
+        android:textSize="@dimen/tv_text_size_19"
+        tools:text="大厅01"/>
+
+    <TextView
+        android:id="@+id/tv_table_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="65dp"
+        android:layout_toRightOf="@+id/tv_table_name"
+        android:gravity="center_vertical|right"
+        android:textColor="@color/tv_text_black_000000"
+        android:textSize="@dimen/tv_text_size_19"
+        tools:text="$216.0"/>
+
+    <ImageView
+        android:id="@+id/iv_func_identify"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/layout_universal_spacing_20"
+        android:layout_marginRight="@dimen/layout_universal_spacing_16"
+        android:src="@drawable/indicate_arrow_right_blue"/>
+
+    <include
+        android:id="@+id/divider_dash_line"
+        layout="@layout/include_dash_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/layout_universal_spacing_16"
+        android:layout_marginRight="@dimen/layout_universal_spacing_16"/>
+
+</RelativeLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_header_height"
+        android:background="#fff">
+
+
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:scaleType="center"
+            android:src="@drawable/back_blue"/>
+
+        <RadioGroup
+            android:id="@+id/couponRadioGroup"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:checkedButton="@+id/validateCouponRadio"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/validateCouponRadio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="32dp"
+                android:background="@drawable/selector_discount_radio_left"
+                android:button="@null"
+                android:gravity="center"
+                android:text="验券"
+                android:textColor="@color/discount_radio_text_selector"
+                android:textSize="13.3sp"
+                ></RadioButton>
+
+            <RadioButton
+                android:id="@+id/selectCouponRadio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="32dp"
+                android:background="@drawable/selector_discount_radio_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="选券"
+                android:textColor="@color/discount_radio_text_selector"
+                android:textSize="13.3sp"
+                ></RadioButton>
+        </RadioGroup>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomButtonPanel"
+        android:layout_below="@id/rl_title">
+
+        <LinearLayout
+            android:id="@+id/couponListPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <RadioGroup
+                android:id="@+id/selectCouponRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="38.7dp"
+                android:checkedButton="@+id/usable"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/invalid"
+                    style="@style/CouponRadioButton"
+                    android:text="未生效"/>
+
+                <RadioButton
+                    android:id="@+id/usable"
+                    style="@style/CouponRadioButton"
+                    android:text="可使用"/>
+
+                <RadioButton
+                    android:id="@+id/died"
+                    style="@style/CouponRadioButton"
+                    android:text="已失效"/>
+            </RadioGroup>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/emptyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="请先登录会员"
+                    android:textColor="@color/common_text_color_b1b1b1"
+                    android:textSize="22.7sp"
+                    />
+
+                <com.kennyc.view.MultiStateView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:msv_emptyView="@layout/state_empty_view"
+                    app:msv_errorView="@layout/state_error_view"
+                    app:msv_viewState="content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/couponRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26.7dp"/>
+
+                </com.kennyc.view.MultiStateView>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inputCouponPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="@dimen/common_interval"
+                android:paddingRight="@dimen/common_interval">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/shape_edit_corner_bg_focused"
+                    >
+
+                    <EditText
+                        android:id="@+id/inputCouponCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/clear"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="优惠券验证码"
+                        android:maxLength="32"
+                        android:textColor="#000"
+                        android:textColorHint="@color/input_hint_text_color"
+                        android:textSize="18.7sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:src="@drawable/edittext_delete"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/validateCouponButton"
+                    android:layout_width="66.7dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/common_interval_small"
+                    android:background="@drawable/selector_button_blue_corners"
+                    android:enabled="false"
+                    android:text="验券"
+                    android:textColor="#fff"
+                    android:textSize="18.7sp"/>
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="16dp"
+                android:id="@+id/inputCouponRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomButtonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_button_height"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/scan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="@drawable/selector_button_green"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scan"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:text="扫描"
+                android:textColor="#fff"
+                android:textSize="@dimen/activity_button_text_size"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_button_height"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button_blue"
+            android:text="确定"
+            android:textColor="#fff"
+            android:enabled="false"
+            android:textSize="@dimen/activity_button_text_size"
+            />
+    </LinearLayout>
+</RelativeLayout>

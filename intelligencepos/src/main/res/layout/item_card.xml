@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_card"
+        android:layout_width="252dp"
+        android:layout_height="133.3dp"
+        android:background="@drawable/selector_list_item_card"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="14dp">
+
+        <TextView
+            android:id="@+id/tv_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/selector_text_color_name_list_item_card"
+            android:textSize="21.3sp"
+            tools:text="飞鸟卡飞鸟卡飞鸟卡飞鸟卡飞鸟卡飞鸟卡飞鸟卡飞鸟卡"/>
+
+        <TextView
+            android:id="@+id/tv_card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/selector_text_color_other_list_item_card"
+            android:textSize="13.3sp"
+            tools:text="卡号：12345678"/>
+
+        <TextView
+            android:id="@+id/tv_card_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/selector_text_color_other_list_item_card"
+            android:textSize="13.3sp"
+            tools:text="支付折扣:9.2折"/>
+
+        <TextView
+            android:id="@+id/tv_card_valid_period_or_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/selector_text_color_other_list_item_card"
+            android:textSize="13.3sp"
+            tools:text="余额:￥100.00"/>
+
+    </LinearLayout>
+
+</LinearLayout>

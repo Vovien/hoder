@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="gone"
+        app:returnVisibility="visibility"
+        app:title="点单号牌"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/selected_org_number_sure"
+        android:layout_below="@+id/title"
+        android:background="#ededed">
+
+        <LinearLayout
+            android:id="@+id/order_front"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="输入号牌"
+                    android:textColor="@color/common_text_color_555555"
+                    android:textSize="18.7sp"
+                    />
+
+                <TextView
+                    android:id="@+id/org_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="21.3dp"
+                    android:background="@drawable/shape_edit_corner_bg_focused"
+                    android:gravity="center"
+                    android:textColor="@color/common_text_color_555555"
+                    android:textSize="18.7sp"
+                    />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lay_keybord_height"
+                android:paddingBottom="@dimen/common_interval_small"
+                android:paddingLeft="@dimen/common_interval_small"
+                android:paddingRight="@dimen/common_interval_small">
+
+                <include layout="@layout/include_keyboard"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/selected_org_number_sure"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_button_blue"
+        android:enabled="false"
+        android:text="确定"
+        android:textColor="#fff"
+        android:textSize="22.7sp"
+        />
+</RelativeLayout>

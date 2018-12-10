@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_text_color_f7f7f7"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="5.3dp"
+        android:background="@color/common_text_color_dfe3e6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38.7dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/bill_recode_recycler_item_4_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/common_text_color_707070"
+            android:textSize="13.3sp"
+            tools:text="结账或者作废时间" />
+
+        <TextView
+            android:id="@+id/bill_recode_recycler_item_4_bill_state"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:maxLength="15"
+            android:textColor="@color/common_text_color_707070"
+            android:textSize="13.3sp"
+            tools:text="操作人员" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/bill_recode_recycler_item_4_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:id="@+id/bill_recode_recycler_item_4_table_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bill_recode_recycler_item_4_table_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="15"
+                android:textColor="@color/common_text_color_000000"
+                android:textSize="18.7sp"
+                tools:text="支付方式" />
+
+            <TextView
+                android:id="@+id/bill_recode_recycler_item_4_serial_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/common_text_color_707070"
+                android:textSize="13.3sp"
+                tools:text="流水号：0215465dsfasfasfsadsadfassdfasdfasdfagasgsdg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bill_recode_recycler_item_4_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/common_text_color_000000"
+            android:textSize="18.7sp"
+            tools:text="￥45.00" />
+    </LinearLayout>
+</LinearLayout>

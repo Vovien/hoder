@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_dish_call_up_title_or_dish_remind_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_universal_spacing_48"
+    android:background="#f7f7f7"
+    android:orientation="horizontal">
+
+    <android.support.v4.widget.Space
+        android:layout_width="@dimen/layout_universal_spacing_12"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_queue_up_type_name"
+        style="@style/queue_statistic_item_text"
+        tools:text="队列" />
+
+    <TextView
+        android:id="@+id/tv_record_count"
+        style="@style/queue_statistic_item_text"
+        tools:text="取号桌数" />
+
+    <TextView
+        android:id="@+id/tv_confirm_count"
+        style="@style/queue_statistic_item_text"
+        tools:text="就餐桌数" />
+
+    <TextView
+        android:id="@+id/tv_avg_waiting_time"
+        style="@style/queue_statistic_item_text"
+        android:gravity="center_vertical|right"
+        tools:text="平均等位" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="@dimen/layout_universal_spacing_12"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

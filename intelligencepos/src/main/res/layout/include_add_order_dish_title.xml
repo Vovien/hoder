@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal"
+    android:background="@color/common_text_color_000000"
+    android:gravity="center_vertical">
+    <ImageView
+        android:id="@+id/add_order_dish_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:src="@drawable/back"/>
+    <TextView
+        android:id="@+id/add_order_dish_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/common_text_color_ffffff"
+        tools:text="桌台  选择菜品"/>
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/activity_table_layout_margin_20dp"
+        android:paddingLeft="@dimen/activity_table_layout_margin_20dp"
+        android:textSize="24sp"
+        android:textColor="@color/common_text_color_ffffff"
+        android:text="刷新"/>
+    <ImageView
+        android:id="@+id/title_more"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/activity_table_layout_margin_20dp"
+        android:paddingRight="@dimen/activity_table_layout_margin_20dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/more"/>
+</LinearLayout>

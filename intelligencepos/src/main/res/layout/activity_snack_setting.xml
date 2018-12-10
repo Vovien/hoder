@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="gone"
+        app:returnVisibility="visibility"
+        app:title="快餐收银设置"/>
+
+    <RelativeLayout
+        android:id="@+id/snack_setting_root"
+        android:layout_width="match_parent"
+        android:layout_height="74.7dp"
+        android:layout_marginTop="5.3dp"
+        android:background="@drawable/selector_is_start_flapper"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用号牌"
+                android:textColor="#000"
+                android:textSize="18.7sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="在快餐下单时填写号牌（仅用于本设备）"
+                android:textColor="@color/tv_text_item_info"
+                android:textSize="13.3sp"
+                />
+        </LinearLayout>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/order_dishes_setting_switch"
+            android:layout_width="46dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:padding="1dp"
+            app:theme="@style/order_dishes_setting_switch"
+            />
+    </RelativeLayout>
+</LinearLayout>

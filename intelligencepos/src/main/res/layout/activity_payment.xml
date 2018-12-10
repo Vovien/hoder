@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="visibility"
+        app:returnVisibility="visibility"
+        app:title="收款">
+
+    </com.holderzone.intelligencepos.widget.Title>
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/multi_state_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_errorView="@layout/state_error_view"
+        app:msv_viewState="content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl_payment_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="38.7dp"
+                android:background="@color/layout_bg_common_thirdly"
+                app:tabIndicatorColor="@color/layout_bg_blue"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/tv_text_blue"
+                app:tabTextAppearance="@style/TabLayout"
+                app:tabTextColor="@color/tv_text_unkown2">
+
+            </android.support.design.widget.TabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_payment_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+
+    </com.kennyc.view.MultiStateView>
+
+</LinearLayout>

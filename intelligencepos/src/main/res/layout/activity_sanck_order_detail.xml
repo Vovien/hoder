@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/bill_detail_multistateview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_viewState="content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <include
+                android:id="@+id/snack_detail_title"
+                layout="@layout/include_bill_recode_title"/>
+
+            <TextView
+                android:id="@+id/snack_detail_dishes_count"
+                android:layout_width="match_parent"
+                android:layout_height="37.3sp"
+                android:layout_below="@+id/snack_detail_title"
+                android:background="@color/common_text_color_ffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="16sp"
+                android:textColor="@color/common_text_color_8b8b8b"
+                android:textSize="16sp"
+                tools:text="已点菜品(5)"
+                />
+
+            <View
+                android:id="@+id/snack_detail_dishes_count_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/snack_detail_dishes_count"
+                android:background="@color/divider_solid_line"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/snack_detail_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/snack_detail_order"
+                android:layout_below="@+id/snack_detail_dishes_count_line"
+                />
+
+            <Button
+                android:id="@+id/snack_detail_order"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/selector_button_blue"
+                android:textColor="#fff"
+                android:textSize="22.7sp"
+                tools:text="¥152.00下单"
+                />
+        </RelativeLayout>
+
+    </com.kennyc.view.MultiStateView>
+</LinearLayout>

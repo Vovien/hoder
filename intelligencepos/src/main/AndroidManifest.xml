@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.holderzone.intelligencepos">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".mvp.activity.VerificationActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mvp.activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.ChooseStoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.UserLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.SplashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <!--堂食-->
+        <activity
+            android:name=".mvp.activity.TableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.ChangeTableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.MergeTableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.SplitTableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.OpenTableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.OpenPredictTableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.TableOpenedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.TableMergedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.DishesOrderedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.hall.activity.AllDishesRemarkChoiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.snack.activity.SnackAllDishesRemarkChoiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.CallUpDishesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.RemindDishesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.RetreatDishesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.DineChangeNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.ChangeRetreatNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.RetreatReasonActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".mvp.activity.RemarkActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".mvp.hall.activity.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.OrderDishesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.PackGroupOrderDishesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/package_dishes" />
+        <!--快销-->
+        <activity
+            android:name=".mvp.activity.SnackDishesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.snack.activity.SnackOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.ChangeNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.ChoosePlateNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.SnackOpenTableActivity"
+            android:screenOrientation="portrait" />
+        <!--外卖订单-->
+        <activity
+            android:name=".mvp.activity.TakeOutActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.ReplyReminderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".mvp.activity.TakeawayBillDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.ChangeDishesActivity"
+            android:screenOrientation="portrait" />
+        <!--结算-->
+        <activity
+            android:name=".mvp.activity.BalanceAccountsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.BalanceAccountsMemberLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.BalanceAccountsAllDishesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.BalanceAccountsDiscountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.BalanceAccountsDiscountMemCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.BalanceAccountsDiscountCouponActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".mvp.activity.BalanceAccountsDiscountWholeOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.BalanceAccountsDiscountChangePaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.BalanceAccountInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.MembershipIntegralActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.BalanceAccountsAdditionalFreesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.DishesAwayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.SingleDishesDiscountActivity"
+            android:screenOrientation="portrait" />
+        <!--支付-->
+        <activity
+            android:name=".mvp.activity.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.PaymentManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.PaymentVipCardCollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.PaymentMtcPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.PaymentMtcCancelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.PaymentMtcRefundActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.PaymentCheckoutActivity"
+            android:screenOrientation="portrait" />
+        <!--账单-->
+        <activity
+            android:name=".mvp.activity.BillRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.BillDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--设置-->
+        <activity
+            android:name=".mvp.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.LoginUserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.SnackSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.RemarkSettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".mvp.activity.RemarkManagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".mvp.activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.DesignatedDishesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.DesignatedOneDishesActivity"
+            android:screenOrientation="portrait" />
+        <!-- 搜索 -->
+        <activity
+            android:name=".mvp.activity.SearchDishesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 排队 -->
+        <activity
+            android:name=".mvp.activity.QueueActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".mvp.activity.QueueStatisticActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".mvp.activity.AddQueueActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".mvp.balancehes.activity.HesMemberCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".mvp.balancehes.activity.HesMemberCouponActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".mvp.balancehes.activity.HesMemberRedPackageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".mvp.activity.VercodeUidActiivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.activity.PaymentVipCardsActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 消息接收监听器 （用户可自主扩展） -->
+        <receiver
+            android:name=".printer.MyMessageReceiver"
+            android:exported="false"> <!-- 为保证receiver安全，建议设置不可导出，如需对其他应用开放可通过android：permission进行限制 -->
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".printer.MyMessageIntentService"
+            android:exported="false">
+            <intent-filter> 
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />
+            </intent-filter>
+            <intent-filter>     
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service android:name=".printer.PushPrintService" />
+        <service android:name=".msg.mqtt.MqttService" />
+
+
+        <meta-data
+            android:name="com.alibaba.app.appkey"
+            android:value="${ALI_PUSH_KEY}" /> <!-- 请填写你自己的- appKey -->
+        <meta-data
+            android:name="com.alibaba.app.appsecret"
+            android:value="${ALI_PUSH_SECRET}" /> <!-- 请填写你自己的appSecret -->
+    </application>
+
+</manifest>

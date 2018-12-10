@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.holderzone.intelligencepos.widget.Title
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menuResVisibility="gone"
+            app:menuTextVisibility="gone"
+            app:returnVisibility="visibility"
+            app:title="账号信息"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="5.3dp"
+            android:background="@color/layout_bg_white"
+            >
+
+            <TextView
+                style="@style/login_user_tv1"
+                android:text="登录员工："/>
+
+            <TextView
+                android:id="@+id/login_user_user"
+                style="@style/login_user_tv2"
+                tools:text="丫丫(110)"
+                />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_horizontal"/>
+
+        <RelativeLayout
+            style="@style/login_user_rl">
+
+            <TextView
+                style="@style/login_user_tv1"
+                android:text="营业日："
+                />
+
+            <TextView
+                android:id="@+id/login_user_business_day"
+                style="@style/login_user_tv2"
+                tools:text="2017-08-08"
+                />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_horizontal"/>
+
+        <RelativeLayout
+            style="@style/login_user_rl">
+
+            <TextView
+                style="@style/login_user_tv1"
+                android:text="登录时间："
+                />
+
+            <TextView
+                android:id="@+id/login_user_start_time"
+                style="@style/login_user_tv2"
+                tools:text="17:57"
+                />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_horizontal"/>
+
+        <RelativeLayout
+            style="@style/login_user_rl">
+
+            <TextView
+                style="@style/login_user_tv1"
+                android:text="登录时长："
+                />
+
+            <TextView
+                android:id="@+id/login_user_login_time"
+                style="@style/login_user_tv2"
+                tools:text="0小时0分钟"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_button_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_button_red"
+        android:text="退出登录"
+        android:textColor="#fff"
+        android:textSize="@dimen/activity_button_text_size"/>
+</RelativeLayout>

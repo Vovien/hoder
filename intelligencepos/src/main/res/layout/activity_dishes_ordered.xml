@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuRes="@drawable/more_blue"
+        app:menuResVisibility="visibility"
+        app:menuTextVisibility="gone"
+        app:returnVisibility="visibility"
+        app:title="大厅01(3482375389590)">
+
+    </com.holderzone.intelligencepos.widget.Title>
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/multi_state_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/state_empty_dishes"
+        app:msv_errorView="@layout/state_error_view"
+        app:msv_loadingView="@layout/state_loading_view"
+        app:msv_viewState="loading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl_func_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_layout_height"
+                android:background="@color/layout_bg_white_ffffff"
+                app:tabIndicatorColor="@color/layout_bg_blue_2495ee"
+                app:tabMaxWidth="0dp"
+                app:tabSelectedTextColor="@color/tv_text_blue_2495ee"
+                app:tabTextAppearance="@style/TabLayout"
+                app:tabTextColor="@color/tv_text_black_000000">
+
+            </android.support.design.widget.TabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_func"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_green_selector"
+                android:gravity="center"
+                android:text="加菜"
+                android:textColor="@color/btn_text_white_ffffff"
+                android:textSize="@dimen/button_text_size"/>
+
+            <Button
+                android:id="@+id/btn_print"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="2dp"
+                style="@style/Button.RightAngle"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </com.kennyc.view.MultiStateView>
+
+</LinearLayout>

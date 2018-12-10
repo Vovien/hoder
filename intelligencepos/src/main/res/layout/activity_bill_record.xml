@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/common_text_color_dfe3e6">
+    <include android:id="@+id/bill_recode_title"
+        layout="@layout/include_bill_recode_title"/>
+    <TextView
+        android:id="@+id/bill_recode_bill_number"
+        android:layout_width="match_parent"
+        android:layout_height="37.3dp"
+        android:gravity="center_vertical"
+        android:textSize="14.7sp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:textColor="@color/common_text_color_8b8b8b"
+        tools:text="今日账单(59)"/>
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/bill_recode_multistateview"
+        app:msv_errorView="@layout/state_error_view"
+        app:msv_emptyView="@layout/state_empty_view"
+        app:msv_viewState="content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+            android:id="@+id/bill_recode_pull_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView>
+    </com.kennyc.view.MultiStateView>
+</LinearLayout>

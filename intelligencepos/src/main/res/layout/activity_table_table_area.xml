@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/ll_table_area"
+              android:layout_width="wrap_content"
+              android:layout_height="37.3dp"
+              android:background="@color/layout_bg_white"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_table_area_name"
+        android:layout_width="wrap_content"
+        android:layout_height="35.3dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="15"
+        android:singleLine="true"
+        android:textColor="@color/tv_text_unkown2"
+        android:textSize="16sp"
+        tools:text="大厅"
+        />
+
+    <View
+        android:id="@+id/table_area_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/additional_frees_count_select"
+        />
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_use_count"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="2"-->
+    <!--android:gravity="top|center_horizontal"-->
+    <!--android:textColor="@color/tv_text_unkown2"-->
+    <!--android:textSize="12sp"-->
+    <!--tools:text="12单"/>-->
+
+</LinearLayout>

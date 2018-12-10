@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="gone"
+        app:returnVisibility="visibility"
+        app:title="菜品赠送"/>
+
+    <include
+        android:id="@+id/header_full_divider"
+        layout="@layout/full_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/btn_text_white_ffffff"
+        android:paddingLeft="14.7dp"
+        android:paddingRight="14.7dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="菜品名称"
+            android:textColor="#555555"
+            android:textSize="18.7sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:textColor="#555555"
+            android:paddingRight="15dp"
+            android:text="结算数量"
+            android:textSize="18.7sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:textColor="#555555"
+            android:text="赠送操作"
+            android:textSize="18.7sp" />
+    </LinearLayout>
+    <include
+        android:id="@+id/header_full_divider"
+        layout="@layout/full_line" />
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/state_empty_view"
+        app:msv_errorView="@layout/state_error_view"
+        app:msv_viewState="content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/awayDishesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layoutManager="LinearLayoutManager"/>
+    </FrameLayout>
+
+    <include layout="@layout/divider_horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/dishesAwayButtonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_button_height"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/all_dishesAway"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_green_selector"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="全部赠送"
+            android:textColor="#fff"
+            android:textSize="@dimen/button_text_size"/>
+
+        <Button
+            android:id="@+id/dishesAway_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/button_blue_selector"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:enabled="false"
+            android:text="确定"
+            android:textColor="#fff"
+            android:textSize="@dimen/button_text_size"/>
+
+    </LinearLayout>
+    </LinearLayout>
+    </com.kennyc.view.MultiStateView>
+</LinearLayout>

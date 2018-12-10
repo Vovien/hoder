@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.holderzone.intelligencepos.mvp.activity.SettingActivity">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="gone"
+        app:returnVisibility="visibility"
+        app:title="设置"/>
+
+    <RelativeLayout
+        android:id="@+id/userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="74.7dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="@dimen/common_interval_small"
+        android:background="#f7f7f7"
+        android:paddingLeft="@dimen/common_interval"
+        android:paddingRight="@dimen/common_interval">
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/login_user"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_interval"
+            android:layout_toRightOf="@+id/userImage"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="18.7sp"
+                tools:text="一休哥"/>
+
+            <TextView
+                android:id="@+id/userCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#8b8b8b"
+                android:textSize="13.3sp"
+                tools:text="员工标号：0215"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_arrow"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/snack_setting"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@+id/userInfo"
+        android:layout_marginTop="@dimen/common_interval_small"
+        android:background="#f7f7f7"
+        android:paddingLeft="@dimen/common_interval"
+        android:paddingRight="@dimen/common_interval">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/snack_setting"
+            android:drawablePadding="@dimen/common_interval"
+            android:text="快餐收银设置"
+            android:textColor="#000"
+            android:textSize="18.7sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_arrow"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/snack_setting"
+        android:background="#fff"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/divider_solid_line"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/remark_setting"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@+id/divider"
+        android:background="#f7f7f7"
+        android:paddingLeft="@dimen/common_interval"
+        android:paddingRight="@dimen/common_interval">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/remark_setting"
+            android:drawablePadding="@dimen/common_interval"
+            android:text="备注管理"
+            android:textColor="#000"
+            android:textSize="18.7sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_arrow"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/abort"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@+id/remark_setting"
+        android:layout_marginTop="@dimen/common_interval_small"
+        android:background="#f7f7f7"
+        android:paddingLeft="@dimen/common_interval"
+        android:paddingRight="@dimen/common_interval">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/about_us"
+            android:drawablePadding="@dimen/common_interval"
+            android:text="关于"
+            android:textColor="#000"
+            android:textSize="18.7sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_arrow"/>
+    </RelativeLayout>
+</RelativeLayout>

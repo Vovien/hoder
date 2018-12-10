@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="74.3dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/common_text_color_ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/order_sure_dishes_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_table_layout_margin_20dp"
+            android:textColor="@color/common_text_color_000000"
+            android:textSize="18.7sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="菜品名称" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_sure_dishes_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/common_text_color_000000"
+                android:textSize="18.7sp"
+                tools:text="x1" />
+
+            <TextView
+                android:id="@+id/order_sure_dishes_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:textColor="@color/common_text_color_707070"
+                android:textSize="14.7sp"
+                tools:text="￥12.0" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/order_sure_dishes_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_table_layout_margin_20dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/more_arrow" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/dash_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+        <include layout="@layout/include_dash_line"/>
+    </RelativeLayout>
+
+</LinearLayout>

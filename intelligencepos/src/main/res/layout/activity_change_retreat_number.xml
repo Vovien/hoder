@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="gone"
+        app:returnVisibility="visibility"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/order_button"
+        android:layout_below="@+id/title"
+        android:background="#ededed"
+        >
+
+        <LinearLayout
+            android:id="@+id/order_front"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="198dp"
+                android:orientation="vertical"
+                >
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/change_retreat_number_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:background="@color/btn_text_white_ffffff"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="扣减库存"
+                    android:textColor="@color/btn_text_gray_8b8b8b"
+                    android:textSize="16sp"
+                    app:theme="@style/order_dishes_setting_switch"
+                    />
+
+                <TextView
+                    android:id="@+id/order_dishes_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="23dp"
+                    android:textColor="@color/btn_text_gray_555555"
+                    android:textSize="18.7sp"
+                    tools:text="[赠]宫保鸡丁"
+                    />
+
+                <TextView
+                    android:id="@+id/order_dishes_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10.7dp"
+                    android:textColor="@color/layout_bg_disable"
+                    android:textSize="16sp"
+                    tools:text="(份)"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="21.3dp"
+                    android:background="@drawable/shape_edit_corner_bg_focused"
+                    >
+
+                    <EditText
+                        android:id="@+id/order_dishes_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:textColor="@color/btn_text_gray_555555"
+                        android:textSize="18.7sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/order_dishes_count_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:src="@drawable/edittext_delete"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/layout_universal_spacing_5"
+                android:paddingLeft="@dimen/layout_universal_spacing_5"
+                android:paddingRight="@dimen/layout_universal_spacing_5">
+
+                <include layout="@layout/include_keyboard"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/order_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/order_dishes_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button_blue"
+            android:text="确定"
+            android:textColor="#fff"
+            android:textSize="22.7sp"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="394dp"
+        android:background="@color/common_text_color_f8f8f8"
+        android:orientation="vertical">
+
+        <include layout="@layout/dialog_dishes_operation_title" />
+
+        <include layout="@layout/divider_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="做法："
+            android:textColor="@color/common_text_color_555555"
+            android:textSize="17.3sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/practice_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <include layout="@layout/divider_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_catty"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/layout_bg_white_ffffff"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_catty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="输入斤数"
+                    android:textColor="@color/tv_text_black_000000"
+                    android:textSize="@dimen/tv_text_size_23" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_dishes_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/common_text_color_ffffff"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/reduce_dishes_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/minus_blue_max" />
+
+                <TextView
+                    android:id="@+id/dishes_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minWidth="22dp"
+                    android:textColor="@color/common_text_color_000000"
+                    android:textSize="16sp"
+                    tools:text="22" />
+
+                <ImageView
+                    android:id="@+id/add_dishes_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/add_blue_max" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_order_dishes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/common_text_color_ffffff"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_order_dishes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_order_dishes_bg"
+                    android:paddingBottom="@dimen/layout_universal_spacing_3"
+                    android:paddingLeft="@dimen/layout_universal_spacing_20"
+                    android:paddingRight="@dimen/layout_universal_spacing_20"
+                    android:paddingTop="@dimen/layout_universal_spacing_3"
+                    android:text="点菜"
+                    android:textColor="@color/tv_text_white_ffffff"
+                    android:textSize="@dimen/tv_text_size_16" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/choice_practice_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_button_blue"
+                android:text="确定"
+                android:textColor="@color/common_text_color_fefefe"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

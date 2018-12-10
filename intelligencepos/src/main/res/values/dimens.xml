@@ -1,0 +1,172 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="activity_header_height">56dp</dimen>
+    <dimen name="activity_button_height">56dp</dimen>
+    <dimen name="input_text_height">48dp</dimen>
+    <dimen name="activity_button_height_large">64dp</dimen>
+    <dimen name="activity_button_height_small">48dp</dimen>
+    <!-- 基本间距-->
+    <dimen name="accounts_drawablePadding">10dp</dimen>
+    <dimen name="common_interval_top">13dp</dimen>
+    <dimen name="common_interval_bottom">13dp</dimen>
+    <dimen name="common_interval">16dp</dimen>
+    <dimen name="common_interval_small">5.3dp</dimen>
+    <!-- 分类垂直间距-->
+    <dimen name="common_classify_vertical_interval">16dp</dimen>
+    <!--字体大小-->
+    <dimen name="activity_button_text_size">22.7sp</dimen>
+    <!--EditText-->
+    <dimen name="et_text_size">18.7sp</dimen>
+    <dimen name="et_height">48dp</dimen>
+    <!--对话框-->
+    <dimen name="dialog_header_height">56dp</dimen>
+    <dimen name="button_stroke_size">2px</dimen>
+    <dimen name="confirm_text_size">22.7sp</dimen>
+    <dimen name="card_info_text_size">18.7sp</dimen>
+    <dimen name="item_title">18.7sp</dimen>
+    <dimen name="item_info">14.7sp</dimen>
+    <dimen name="activity_table_layout_margin_20dp">20dp</dimen>
+
+    <!--define-->
+    <item name="match_parent" type="dimen">-1</item>
+    <item name="wrap_content" type="dimen">-2</item>
+    <item name="button_text_size" type="dimen">22.7sp</item>
+
+    <!--layout-->
+    <dimen name="layout_header_height">51dp</dimen>
+    <dimen name="layout_header_height_large">56dp</dimen>
+    <dimen name="layout_universal_spacing_1">1dp</dimen>
+    <dimen name="layout_universal_spacing_3">3dp</dimen>
+    <dimen name="layout_universal_spacing_5">5dp</dimen>
+    <dimen name="layout_universal_spacing_8">8dp</dimen>
+    <dimen name="layout_universal_spacing_10">10dp</dimen>
+    <dimen name="layout_universal_spacing_12">12dp</dimen>
+    <dimen name="layout_universal_spacing_16">16dp</dimen>
+    <dimen name="layout_universal_spacing_18">18dp</dimen>
+    <dimen name="layout_universal_spacing_20">20dp</dimen>
+    <dimen name="layout_universal_spacing_22">22dp</dimen>
+    <dimen name="layout_universal_spacing_24">24dp</dimen>
+    <dimen name="layout_universal_spacing_27">27dp</dimen>
+    <dimen name="layout_universal_spacing_28">28dp</dimen>
+    <dimen name="layout_universal_spacing_32">32dp</dimen>
+    <dimen name="layout_universal_spacing_36">36dp</dimen>
+    <dimen name="layout_universal_spacing_37">37dp</dimen>
+    <dimen name="layout_universal_spacing_39">39dp</dimen>
+    <dimen name="layout_universal_spacing_48">48dp</dimen>
+    <dimen name="layout_universal_spacing_56">56dp</dimen>
+    <dimen name="layout_universal_spacing_64">64dp</dimen>
+    <dimen name="layout_universal_spacing_72">72dp</dimen>
+    <dimen name="layout_universal_spacing_75">75dp</dimen>
+    <dimen name="layout_universal_spacing_96">96dp</dimen>
+
+    <!--textView-->
+    <dimen name="tv_text_size_10">10sp</dimen>
+    <dimen name="tv_text_size_11">11sp</dimen>
+    <dimen name="tv_text_size_12">12sp</dimen>
+    <dimen name="tv_text_size_13">13sp</dimen>
+    <dimen name="tv_text_size_14">14sp</dimen>
+    <dimen name="tv_text_size_15">15sp</dimen>
+    <dimen name="tv_text_size_16">16sp</dimen>
+    <dimen name="tv_text_size_18">18sp</dimen>
+    <dimen name="tv_text_size_19">19sp</dimen>
+    <dimen name="tv_text_size_20">20sp</dimen>
+    <dimen name="tv_text_size_21">21sp</dimen>
+    <dimen name="tv_text_size_22">22sp</dimen>
+    <dimen name="tv_text_size_23">23sp</dimen>
+    <dimen name="tv_text_size_24">24sp</dimen>
+    <dimen name="tv_text_size_26">26sp</dimen>
+    <dimen name="tv_text_size_27">27sp</dimen>
+    <dimen name="tv_text_size_36">36sp</dimen>
+    <dimen name="tv_text_size_28">28sp</dimen>
+    <dimen name="tv_text_size_30">30sp</dimen>
+    <dimen name="tv_text_size_32">32sp</dimen>
+    <dimen name="tv_width">200dp</dimen>
+    <dimen name="tv_height">48dp</dimen>
+
+    <!--editText-->
+    <dimen name="et_text_size_14">14sp</dimen>
+    <dimen name="et_text_size_16">16sp</dimen>
+    <dimen name="et_text_size_18">18sp</dimen>
+    <dimen name="et_text_size_19">19sp</dimen>
+    <dimen name="et_text_size_20">20sp</dimen>
+    <dimen name="et_text_size_22">22sp</dimen>
+    <dimen name="et_text_size_24">24sp</dimen>
+    <dimen name="et_text_size_26">26sp</dimen>
+    <dimen name="et_text_size_28">28sp</dimen>
+    <dimen name="et_text_size_30">30sp</dimen>
+    <dimen name="et_width">@dimen/match_parent</dimen>
+    <dimen name="et_height_72">72dp</dimen>
+    <dimen name="et_height_64">64dp</dimen>
+    <dimen name="et_height_48">48dp</dimen>
+    <dimen name="et_padding">16dp</dimen>
+    <dimen name="et_padding_left">21.3dp</dimen>
+    <dimen name="et_padding_right">8dp</dimen>
+    <dimen name="et_padding_top">8dp</dimen>
+    <dimen name="et_padding_bottom">8dp</dimen>
+
+    <!--button-->
+    <dimen name="btn_text_size_x_small">18.7sp</dimen>
+    <dimen name="btn_text_size_small">18.7sp</dimen>
+    <dimen name="btn_text_size_18">18sp</dimen>
+    <dimen name="btn_text_size_22">22sp</dimen>
+    <dimen name="btn_text_size_23">23sp</dimen>
+    <dimen name="btn_text_size_28">28sp</dimen>
+    <dimen name="btn_text_size_large">18.7sp</dimen>
+    <dimen name="btn_text_size_x_large">26.7sp</dimen>
+    <dimen name="btn_width">@dimen/match_parent</dimen>
+    <dimen name="btn_height_medium">56dp</dimen>
+    <dimen name="btn_height_large">64dp</dimen>
+
+    <!--divider-->
+    <dimen name="divider_horizontal_width">@dimen/match_parent</dimen>
+    <dimen name="divider_horizontal_height">1px</dimen>
+    <dimen name="divider_vertical_width">1px</dimen>
+    <dimen name="divider_vertical_height">@dimen/match_parent</dimen>
+
+    <!--dialog-->
+    <dimen name="dialog_width">328dp</dimen>
+    <dimen name="dialog_height">152dp</dimen>
+    <dimen name="dialog_button_height">56dp</dimen>
+    <dimen name="dialog_progress_width">192dp</dimen>
+    <dimen name="dialog_progress_height">120dp</dimen>
+    <dimen name="dialog_confirm_width">288dp</dimen>
+    <dimen name="dialog_confirm_height">152dp</dimen>
+    <dimen name="dialog_retreat_reasons_width">570dp</dimen>
+    <dimen name="dialog_retreat_reasons_height">544dp</dimen>
+    <dimen name="dialog_dishes_remarks_width">570dp</dimen>
+    <dimen name="dialog_dishes_remarks_height">544dp</dimen>
+    <dimen name="dialog_integer_number_width">511dp</dimen>
+    <dimen name="dialog_integer_number_height">648.5dp</dimen>
+    <dimen name="dialog_decimal_number_width">511dp</dimen>
+    <dimen name="dialog_decimal_number_height">648.5dp</dimen>
+    <dimen name="dialog_add_description_width">570dp</dimen>
+    <dimen name="dialog_add_description_height">300dp</dimen>
+    <dimen name="dialog_height_reset_psd">185.3dp</dimen>
+    <dimen name="add_dishes_remark_height">168dp</dimen>
+    <dimen name="dishes_operation_width">288dp</dimen>
+    <dimen name="dishes_operation_height">293.3dp</dimen>
+    <dimen name="dishes_allin_pay_height">276dp</dimen>
+    <dimen name="dishes_allin_pay_return_height">204dp</dimen>
+    <dimen name="package_group_height">394dp</dimen>
+    <dimen name="dishes_order_car_height">268dp</dimen>
+    <dimen name="dishes_order_car_y">80dp</dimen>
+
+    <!--keyboard-->
+    <dimen name="lay_keybord_height">258dp</dimen>
+
+    <!--corner-->
+    <dimen name="radius">4dp</dimen>
+    <dimen name="radius_7">7dp</dimen>
+
+    <!--stroke-->
+    <dimen name="stroke">1dp</dimen>
+
+    <!--tabLayout-->
+    <dimen name="tab_layout_height">37dp</dimen>
+    <dimen name="layout_universal_spacing_220">220dp</dimen>
+
+
+    <!--other-->
+
+</resources>

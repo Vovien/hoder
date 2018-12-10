@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:id="@+id/snack_new_order_right_title_layout"
+    android:background="@color/common_text_color_ffffff"
+    android:orientation="vertical">
+    <!--<include-->
+        <!--android:id="@+id/top_divider"-->
+        <!--layout="@layout/divider_horizontal"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30.7dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:background="@color/bg_dishes_type_item_normal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/common_text_color_555555"
+            android:gravity="center_vertical"
+            android:id="@+id/snack_new_order_right_title"
+            android:textSize="16sp"
+            tools:text="菜品类型"/>
+    </LinearLayout>
+    <include
+        layout="@layout/divider_horizontal"/>
+</LinearLayout>

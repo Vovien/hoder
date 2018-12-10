@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_common"
+    android:orientation="vertical">
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/multi_state_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/state_empty_view"
+        app:msv_errorView="@layout/state_error_view"
+        app:msv_viewState="content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/login_logo" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_height"
+                android:layout_marginLeft="@dimen/common_interval"
+                android:layout_marginRight="@dimen/common_interval"
+                android:background="@drawable/shape_edit_corner_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/et_height"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/user_account" />
+
+                <include
+                    layout="@layout/divider_vertical"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null">
+
+                    <EditText
+                        android:id="@+id/et_user_name"
+                        style="@style/EditText.Selector"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="员工账号"
+                        android:inputType="number" />
+
+                    <ImageView
+                        android:id="@+id/iv_clear_user_name"
+                        style="@style/ImageView.EditTextClear"
+                        tools:visibility="visible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="13.3dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_height"
+                android:layout_marginLeft="@dimen/common_interval"
+                android:layout_marginRight="@dimen/common_interval"
+                android:background="@drawable/shape_edit_corner_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/et_height"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/user_password" />
+
+                <include
+                    layout="@layout/divider_vertical"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        style="@style/EditText.Selector"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="员工密码"
+                        android:inputType="textPassword" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_clear_password"
+                        style="@style/ImageView.EditTextClear"
+                        tools:visibility="visible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="13.3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/common_interval"
+                android:paddingRight="@dimen/common_interval"
+                android:weightSum="4">
+
+                <Button
+                    android:id="@+id/btn_login"
+                    style="@style/RoundCornerButton"
+                    android:layout_width="match_parent"
+                    android:text="登录"
+                    android:textColor="@color/tv_text_white"
+                    android:textSize="22.7sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/tv_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/indicate_arrow_down"
+                    android:textColor="@color/tv_text_blue"
+                    android:textSize="17.3sp"
+                    tools:text="西村店[1002]" />
+
+            </RelativeLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10.7dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_version_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#b2b2b2"
+                    android:textSize="14.7sp"
+                    tools:text="软件版本：V1.0.2" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.kennyc.view.MultiStateView>
+
+</LinearLayout>

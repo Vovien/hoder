@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="17dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_center"
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+
+        <TextView
+            android:id="@+id/tv_discount_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_discount_number"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/common_text_color_000000"
+            android:textSize="14.7sp"
+            tools:text="折扣合计" />
+
+        <TextView
+            android:id="@+id/tv_discount_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textColor="@color/common_text_color_000000"
+            android:textSize="15sp"
+            tools:text="￥56.00" />
+    </RelativeLayout>
+</RelativeLayout>

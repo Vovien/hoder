@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/bill_detail_info_multistateview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/state_empty_view"
+        app:msv_errorView="@layout/state_error_view"
+        app:msv_viewState="content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bill_details_text"
+                    android:text="流水号：" />
+
+                <TextView
+                    android:id="@+id/activity_bill_details_serial_number"
+                    style="@style/bill_details_text_right"
+                    tools:text="21587455" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bill_details_text"
+                    android:text="桌台：" />
+
+                <TextView
+                    android:id="@+id/activity_bill_details_serial_table"
+                    style="@style/bill_details_text_right"
+                    tools:text="001" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bill_details_text"
+                    android:text="就餐人数：" />
+
+                <TextView
+                    android:id="@+id/activity_bill_details_serial_people_number"
+                    style="@style/bill_details_text_right"
+                    tools:text="5人" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bill_details_text"
+                    android:text="交易类型：" />
+
+                <TextView
+                    android:id="@+id/activity_bill_details_serial_type"
+                    style="@style/bill_details_text_right"
+                    tools:text="堂食" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bill_details_text"
+                    android:text="开台时间：" />
+
+                <TextView
+                    android:id="@+id/activity_bill_details_serial_begin_time"
+                    style="@style/bill_details_text_right"
+                    tools:text="2017-06-05 21:30" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/activity_bill_end_time"
+                    style="@style/bill_details_text"
+                    android:text="结账时间：" />
+
+                <TextView
+                    android:id="@+id/activity_bill_details_serial_end_time"
+                    style="@style/bill_details_text_right"
+                    tools:text="2017-06-05 21:30" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bill_details_text"
+                    android:text="菜品合计：" />
+
+                <TextView
+                    android:id="@+id/activity_bill_details_serial_all_money"
+                    style="@style/bill_details_text_right"
+                    tools:text="￥152.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bill_details_text"
+                    android:text="附加费合计：" />
+
+                <TextView
+                    android:id="@+id/activity_bill_details_serial_all_surcharge"
+                    style="@style/bill_details_text_right"
+                    tools:text="￥588" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bill_details_text"
+                    android:text="折扣合计：" />
+
+                <TextView
+                    android:id="@+id/activity_bill_details_serial_discount"
+                    style="@style/bill_details_text_right"
+                    tools:text="￥0.20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bill_details_text"
+                    android:text="支付折扣：" />
+
+                <TextView
+                    android:id="@+id/activity_bill_details_serial_payment_discount"
+                    style="@style/bill_details_text_right"
+                    tools:text="￥564" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bill_details_text"
+                    android:text="实收金额：" />
+
+                <TextView
+                    android:id="@+id/activity_bill_details_serial_all_payment"
+                    style="@style/bill_details_text_right"
+                    tools:text="￥592" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bill_details_text"
+                    android:text="账单状态：" />
+
+                <TextView
+                    android:id="@+id/activity_bill_details_serial_bill_state"
+                    style="@style/bill_details_text_right"
+                    tools:text="已作废" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bill_details_text"
+                    android:text="下单人：" />
+
+                <TextView
+                    android:id="@+id/activity_bill_details_serial_under_single"
+                    style="@style/bill_details_text_right"
+                    tools:text="王小二" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bill_details_text"
+                    android:text="结账人：" />
+
+                <TextView
+                    android:id="@+id/activity_bill_details_serial_bill_holder"
+                    style="@style/bill_details_text_right"
+                    tools:text="二狗子" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.kennyc.view.MultiStateView>
+</ScrollView>

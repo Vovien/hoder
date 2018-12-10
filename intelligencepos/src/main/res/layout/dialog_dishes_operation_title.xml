@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/common_text_color_f8f8f8"
+    android:layout_height="53.3dp">
+    <TextView
+        android:id="@+id/dishes_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/common_text_color_555555"
+        android:textSize="20sp"
+        tools:text="菜品名称" />
+
+    <ImageView
+        android:id="@+id/dishes_dialog_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:src="@drawable/dialog_close" />
+</RelativeLayout>

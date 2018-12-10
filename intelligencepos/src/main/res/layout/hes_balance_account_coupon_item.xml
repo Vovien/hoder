@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_marginLeft="@dimen/layout_universal_spacing_8"
+        android:layout_marginTop="@dimen/layout_universal_spacing_8"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/shape_frame_weight_bg">
+
+            <TextView
+                android:id="@+id/tv_coupon_type"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/common_text_color_ffffff"
+                android:textSize="19sp"
+                tools:background="@drawable/shap_exchange_coupon"
+                tools:text="代金券" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_coupon_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv_coupon_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_universal_spacing_8"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/common_text_color_000000"
+                            android:textSize="23sp"
+                            tools:text="儿童套餐兑换券" />
+
+                        <ImageView
+                            android:id="@+id/iv_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/layout_universal_spacing_8"
+                            android:src="@drawable/do_not_share" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_coupon_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="end"
+                        android:maxLines="1"
+                        android:paddingRight="@dimen/layout_universal_spacing_8"
+                        android:textColor="@color/common_text_color_000000"
+                        android:textSize="23sp"
+                        tools:text="￥23.01" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_coupon_verification_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/layout_universal_spacing_8"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/common_text_color_707070"
+                    android:textSize="15sp"
+                    tools:text="验证码：HHIOSHDIA" />
+
+                <TextView
+                    android:id="@+id/tv_coupon_term_validity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layout_universal_spacing_8"
+                    android:layout_marginTop="@dimen/layout_universal_spacing_8"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/layout_universal_spacing_8"
+                    android:singleLine="true"
+                    android:textColor="@color/common_text_color_707070"
+                    android:textSize="15sp"
+                    tools:text="有效期:2017-01-01 至 2017-12-31 " />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/check_checked" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_universal_spacing_8" />
+</LinearLayout>

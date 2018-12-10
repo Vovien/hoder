@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_common"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_for_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.holderzone.intelligencepos.widget.CircleProgress
+            android:id="@+id/pb_download"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerInParent="true"
+            android:background="#F5F9FC"
+            app:identifyTextColor="#292929"
+            app:identifyTextSize="11sp"
+            app:marginBetweenProgressAndIdentify="10dp"
+            app:marginBetweenProgressAndPercent="6dp"
+            app:percentTextColor="#2495ee"
+            app:percentTextSize="17sp"
+            app:progressTextColor="#2495ee"
+            app:progressTextSize="42sp"
+            app:roundColor="#eeeeee"
+            app:roundProgressColor="#2495ee"/>
+
+        <ImageView
+            android:id="@+id/iv_sync_error"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/splash_sync_error"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="226.7dp"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="76dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/space_center"
+            android:background="@drawable/selector_button_green_corners"
+            android:text="退出系统"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <android.support.v4.widget.Space
+            android:id="@+id/space_center"
+            android:layout_width="1px"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="76dp"/>
+
+        <Button
+            android:id="@+id/btn_re_login"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="76dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="14dp"
+            android:layout_toRightOf="@+id/space_center"
+            android:background="@drawable/selector_button_blue_corners"
+            android:text="重新登陆"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

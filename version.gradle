@@ -1,0 +1,17 @@
+ext {
+    //T1
+    t1VersionCode = 43
+    t1VersionName = "2.4.4"
+    //V1P1
+    v1VersionCode = 21
+    v1VersionName = "1.6.2"
+    // M1
+    m1VersionCode = 12
+    m1VersionName = "1.4.1"
+    //kds
+    kdsVersionCode = 9
+    kdsVersionName = "1.0.8"
+    //pad
+    padVersionCode = 15
+    padVersionName = "1.4.2"
+}

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="gone"
+        app:title="收款结账 ">
+
+    </com.holderzone.intelligencepos.widget.Title>
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/multi_state_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_errorView="@layout/state_error_view"
+        app:msv_viewState="content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10.7dp"
+                android:layout_weight="1"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/iv_check_out_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_check_out_state"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp"
+                    android:scaleType="center"
+                    tools:src="@drawable/check_out_succeed"/>
+
+                <TextView
+                    android:id="@+id/tv_check_out_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_check_out_notice"
+                    android:layout_marginBottom="10.7dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/tv_text_unkown2"
+                    android:textSize="25.3sp"
+                    tools:text="结账成功"/>
+
+                <TextView
+                    android:id="@+id/tv_check_out_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:textColor="#707070"
+                    android:textSize="14.7sp"
+                    tools:text="请将结账小票交于顾客"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_serial_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/ll_table_name"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="流水号："
+                        android:textColor="#707070"
+                        android:textSize="14.7sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_serial_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="#707070"
+                        android:textSize="14.7sp"
+                        tools:text="201707170378"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_table_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/ll_actually_pay_money"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="桌台："
+                        android:textColor="#707070"
+                        android:textSize="14.7sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_table_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="#707070"
+                        android:textSize="14.7sp"
+                        tools:text="大厅01"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_actually_pay_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/ll_checkout_time"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="实收金额："
+                        android:textColor="#707070"
+                        android:textSize="14.7sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_actually_pay_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="#707070"
+                        android:textSize="14.7sp"
+                        tools:text="￥112.00"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_checkout_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="21.3dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="结账时间："
+                        android:textColor="#707070"
+                        android:textSize="14.7sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_checkout_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="#707070"
+                        android:textSize="14.7sp"
+                        tools:text="2017-07-17 12:26:09"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_done"
+                style="@style/RightAngleButton"
+                android:enabled="false"
+                android:text="完成"/>
+
+        </LinearLayout>
+
+    </com.kennyc.view.MultiStateView>
+
+</LinearLayout>

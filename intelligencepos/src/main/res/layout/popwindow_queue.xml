@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/refresh"
+        android:layout_width="147dp"
+        android:layout_height="45dp"
+        android:background="@color/layout_bg_white_ffffff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/refresh_big" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="@string/pop_window_refresh"
+            android:textColor="#000000"
+            android:textSize="@dimen/tv_text_size_16" />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_dash_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_statistics"
+        android:layout_width="147dp"
+        android:layout_height="45dp"
+        android:background="@color/layout_bg_white_ffffff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/statistics" />
+
+        <TextView
+            android:id="@+id/tv_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="@string/pop_window_statistics"
+            android:textColor="#000000"
+            android:textSize="@dimen/tv_text_size_16" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

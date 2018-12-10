@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_text_color_f8f8f8"
+    android:orientation="vertical">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="visibility"
+        app:returnVisibility="gone">
+
+    </com.holderzone.intelligencepos.widget.Title>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_dine_register_cashier"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_dine_register_cashier"
+                    style="@style/style_home_image"
+                    android:src="@drawable/home_cash_register_cashier" />
+
+                <TextView
+                    android:id="@+id/tv_count_of_dine_check_out_unfinished"
+                    style="@style/style_home_flag_text"
+                    tools:text="0单未结账" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/style_home_text"
+                android:text="堂食点餐" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fast_food_register_cashier"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_fast_food_register_cashier"
+                    style="@style/style_home_image"
+                    android:src="@drawable/home_snack_icon" />
+
+                <TextView
+                    android:id="@+id/tv_fast_food_register_cashier"
+                    style="@style/style_home_flag_text"
+                    tools:text="0单未结账" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/style_home_text"
+                android:text="快餐收银" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_take_out_cashier"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_take_out_cashier"
+                    style="@style/style_home_image"
+                    android:src="@drawable/home_take_put_icon" />
+
+                <TextView
+                    android:id="@+id/tv_take_out_cashier"
+                    style="@style/style_home_flag_text"
+                    tools:text="0单未结账" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/style_home_text"
+                android:text="外卖订单" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_queue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/style_home_image"
+                    android:src="@drawable/home_queue_icon" />
+
+                <TextView
+                    android:id="@+id/tv_queue"
+                    style="@style/style_home_flag_text"
+                    tools:text="0单未结账" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/style_home_text"
+                android:text="排队" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_bill_record"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_bill_record"
+                style="@style/style_home_image"
+                android:src="@drawable/home_billing_record" />
+
+            <TextView
+                android:id="@+id/tv_bill_record"
+                style="@style/style_home_text"
+                android:text="账单记录" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/style_home_image"
+                android:src="@drawable/home_setting" />
+
+            <TextView
+                style="@style/style_home_text"
+                android:text="设置" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

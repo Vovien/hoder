@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_text_color_dfe3e6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_universal_spacing_56"
+        android:background="@color/layout_bg_white_ffffff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/layout_universal_spacing_16"
+            android:paddingRight="@dimen/layout_universal_spacing_20"
+            android:src="@drawable/back_blue" />
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/layout_universal_spacing_8"
+            android:layout_marginRight="@dimen/layout_universal_spacing_16"
+            android:layout_marginTop="@dimen/layout_universal_spacing_8"
+            android:layout_weight="1"
+            android:background="@drawable/shape_edit_corner_bg_focused"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="@dimen/layout_universal_spacing_8"
+                android:hint="搜索菜品名称/编号"
+                android:maxLength="8"
+                android:paddingLeft="@dimen/layout_universal_spacing_8"
+                android:singleLine="true"
+                android:textColor="@color/tv_text_black_000000"
+                android:textSize="@dimen/tv_text_size_16" />
+
+            <ImageView
+                android:id="@+id/iv_search_close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/layout_universal_spacing_20"
+                android:paddingRight="@dimen/layout_universal_spacing_8"
+                android:src="@drawable/edittext_delete" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/msv_context"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:msv_emptyView="@layout/state_empty_search_dishes_view"
+        app:msv_errorView="@layout/state_error_view"
+        app:msv_loadingView="@layout/state_loading_unknown_view">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.kennyc.view.MultiStateView>
+</LinearLayout>

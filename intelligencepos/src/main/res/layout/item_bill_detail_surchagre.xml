@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content"
+    android:background="@color/common_text_color_f7f7f7"
+    android:orientation="vertical">
+        <View
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="5.3dp"
+            android:background="@color/common_text_color_dfe3e6"/>
+        <RelativeLayout
+            android:id="@+id/bill_detail_recode_item_3_center_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+                <TextView
+                    android:id="@+id/bill_detail_recode_item_3_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:maxLength="15"
+                    android:ellipsize="end"
+                    android:textColor="@color/common_text_color_000000"
+                    android:textSize="18.7sp"
+                    tools:text="整单折扣"/>
+                <LinearLayout
+                    android:id="@+id/bill_detail_recode_item_3_right_layout"
+                    android:layout_toRightOf="@+id/bill_detail_recode_item_3_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/bill_detail_recode_item_3_number"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:layout_height="0dp"
+                            android:textSize="18.7sp"
+                            android:textColor="@color/common_text_color_000000"
+
+                            tools:text="X1" />
+                        <TextView
+                            android:id="@+id/bill_detail_recode_item_3_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13.3sp"
+                            android:textColor="@color/common_text_color_707070"
+                            android:layout_marginBottom="8dp"
+                            tools:text="￥20.2"/>
+                </LinearLayout>
+        </RelativeLayout>
+</LinearLayout>

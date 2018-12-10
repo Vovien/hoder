@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#dfe3e6"
+              android:orientation="vertical"
+              tools:layout_height="250dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/btn_text_gray_555555"
+            android:textSize="20sp"
+            tools:text="宫保鸡丁"
+            />
+
+        <ImageView
+            android:id="@+id/close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/dialog_close"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/change_number"
+            style="@style/dishes_operation"
+            android:background="@drawable/selector_item_bg_operation"
+            android:text="修改数量"
+            />
+
+        <include layout="@layout/divider_horizontal"/>
+
+        <TextView
+            android:id="@+id/hang"
+            style="@style/dishes_operation"
+            android:background="@drawable/selector_item_bg_operation"
+            tools:text="挂起"
+            />
+
+        <include layout="@layout/divider_horizontal"/>
+
+        <TextView
+            android:id="@+id/gift"
+            style="@style/dishes_operation"
+            android:background="@drawable/selector_item_bg_operation"
+            tools:text="赠送"
+            />
+
+        <include layout="@layout/divider_horizontal"/>
+
+        <TextView
+            android:id="@+id/no_print"
+            style="@style/dishes_operation"
+            android:background="@drawable/selector_item_bg_operation"
+            tools:text="不打印厨单"
+            />
+
+        <include layout="@layout/divider_horizontal"/>
+
+        <TextView
+            android:id="@+id/remark"
+            style="@style/dishes_operation"
+            android:background="@drawable/selector_item_bg_operation"
+            android:text="备注信息"
+            />
+
+        <include layout="@layout/divider_horizontal"/>
+
+        <TextView
+            android:id="@+id/delete"
+            style="@style/dishes_operation"
+            android:background="@drawable/selector_item_bg_operation"
+            android:text="删除"
+            android:textColor="@color/tv_text_red_f56766"
+            />
+    </LinearLayout>
+
+</LinearLayout>

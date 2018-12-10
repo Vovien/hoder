@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:id="@+id/change_count_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="取消"
+            android:textColor="@color/tv_text_gray_555555"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/order_dishes_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:hint="输入数量"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/common_text_color_555555"
+            android:textColorHint="#bfbfbf"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/change_count_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="确定"
+            android:textColor="@color/btn_text_blue_2495ee"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/common_interval_small"
+        android:paddingLeft="@dimen/common_interval_small"
+        android:paddingRight="@dimen/common_interval_small">
+
+        <include layout="@layout/include_keyboard" />
+    </FrameLayout>
+</LinearLayout>

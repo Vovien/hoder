@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.holderzone.intelligencepos.widget.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menuResVisibility="gone"
+        app:menuTextVisibility="gone"
+        app:returnVisibility="visibility"
+        app:title="会员登录"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/telephone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/common_interval"
+            android:layout_marginRight="@dimen/common_interval"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/shape_edit_corner_bg_focused"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:hint="会员手机号"
+            android:textColor="#555555"
+            android:textColorHint="#b2b2b2"
+            android:textSize="18.7sp"
+            />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lay_keybord_height"
+        android:paddingBottom="@dimen/common_interval_small"
+        android:paddingLeft="@dimen/common_interval_small"
+        android:paddingRight="@dimen/common_interval_small">
+
+        <include layout="@layout/include_keyboard"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_button_height"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/scanBarCode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button_green"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scan"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="扫码"
+                android:textColor="#fff"
+                android:textSize="@dimen/activity_button_text_size"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button_blue"
+            android:enabled="false"
+            android:text="登录"
+            android:textColor="#fff"
+            android:textSize="@dimen/activity_button_text_size"/>
+    </LinearLayout>
+</LinearLayout>

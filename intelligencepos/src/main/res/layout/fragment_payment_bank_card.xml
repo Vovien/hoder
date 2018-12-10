@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/layout_bg_common_secodary"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/common_interval"
+            android:layout_marginRight="@dimen/common_interval"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/common_interval">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="金额"
+                android:textColor="@color/tv_text_unkown2"
+                android:textSize="18.7sp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_actually_pay_money"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/et_height"
+                android:layout_weight="3.4"
+                android:background="@drawable/shape_edit_corner_bg">
+
+                <EditText
+                    android:id="@+id/et_actually_pay_money"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:saveEnabled="false"/>
+
+                <ImageView
+                    android:id="@+id/iv_clear_actually_pay_money"
+                    style="@style/ImageView.EditTextClear"
+                    tools:visibility="visible"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/common_interval"
+            android:layout_marginRight="@dimen/common_interval"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/common_interval">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="流水号"
+                android:textColor="@color/tv_text_unkown2"
+                android:textSize="18.7sp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_serial_number"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/et_height"
+                android:layout_weight="3.4"
+                android:background="@drawable/shape_edit_corner_bg">
+
+                <EditText
+                    android:id="@+id/et_serial_number"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:saveEnabled="false"/>
+
+                <ImageView
+                    android:id="@+id/iv_clear_serial_number"
+                    style="@style/ImageView.EditTextClear"
+                    tools:visibility="visible"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/include_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/common_interval_small"
+        android:layout_marginLeft="@dimen/common_interval_small"
+        android:layout_marginRight="@dimen/common_interval_small"
+        android:layout_weight="5"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/RightAngleButton"
+        android:text="收款"/>
+
+</LinearLayout>

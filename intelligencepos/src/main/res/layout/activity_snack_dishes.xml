@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/snack_dishes_title"
+        layout="@layout/include_bill_recode_title"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/snack_dishes_tab_layout"
+        android:layout_below="@+id/snack_dishes_title"
+        android:layout_width="match_parent"
+        android:layout_height="38.7dp"
+        app:tabSelectedTextColor="@color/tv_text_blue"
+        app:tabTextColor="@color/tv_text_unkown2"
+        app:tabTextAppearance="@style/TabLayout"
+        android:background="@color/common_text_color_ffffff"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/tv_text_blue"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/snack_dishes_viewpager"
+        android:layout_below="@+id/snack_dishes_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
